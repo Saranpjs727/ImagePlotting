@@ -1,27 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
-                {
-                    "source": "/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/packaged_res/generalDebug/values/values.xml",
-                    "from": {
-                        "startLines": "2,9",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,354",
-                        "endLines": "8,51",
-                        "endColumns": "12,24",
-                        "endOffsets": "349,2241"
-                    },
-                    "to": {
-                        "startLines": "2046,2803",
-                        "startColumns": "4,4",
-                        "startOffsets": "140550,181866",
-                        "endLines": "2052,2845",
-                        "endColumns": "12,24",
-                        "endOffsets": "140844,183753"
-                    }
-                },
                 {
                     "source": "/Users/saranya/.gradle/caches/transforms-3/fadb6651b9c34e1bf1f22649e3a37779/transformed/jetified-autofill-1.1.0/res/values/values.xml",
                     "from": {
@@ -61,39 +42,20 @@
                     }
                 },
                 {
-                    "source": "/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
+                    "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/values/strings.xml",
                     "from": {
-                        "startLines": "6,8",
-                        "startColumns": "4,4",
-                        "startOffsets": "156,262",
-                        "endColumns": "63,68",
-                        "endOffsets": "215,326"
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "50",
+                        "endOffsets": "62"
                     },
                     "to": {
-                        "startLines": "299,300",
-                        "startColumns": "4,4",
-                        "startOffsets": "19251,19315",
-                        "endColumns": "63,68",
-                        "endOffsets": "19310,19379"
-                    }
-                },
-                {
-                    "source": "/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3",
+                        "startLines": "330",
                         "startColumns": "4",
-                        "startOffsets": "54",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "267"
-                    },
-                    "to": {
-                        "startLines": "418",
-                        "startColumns": "4",
-                        "startOffsets": "30236",
-                        "endLines": "421",
-                        "endColumns": "12",
-                        "endOffsets": "30449"
+                        "startOffsets": "21393",
+                        "endColumns": "50",
+                        "endOffsets": "21439"
                     }
                 },
                 {
@@ -188,20 +150,20 @@
                     }
                 },
                 {
-                    "source": "/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/res/values/strings.xml",
+                    "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
                     "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "50",
-                        "endOffsets": "62"
+                        "startLines": "6,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "156,262",
+                        "endColumns": "63,68",
+                        "endOffsets": "215,326"
                     },
                     "to": {
-                        "startLines": "330",
-                        "startColumns": "4",
-                        "startOffsets": "21393",
-                        "endColumns": "50",
-                        "endOffsets": "21439"
+                        "startLines": "299,300",
+                        "startColumns": "4,4",
+                        "startOffsets": "19251,19315",
+                        "endColumns": "63,68",
+                        "endOffsets": "19310,19379"
                     }
                 },
                 {
@@ -219,6 +181,25 @@
                         "startOffsets": "18826",
                         "endColumns": "49",
                         "endOffsets": "18871"
+                    }
+                },
+                {
+                    "source": "/Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/packaged_res/generalDebug/values/values.xml",
+                    "from": {
+                        "startLines": "2,9",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,354",
+                        "endLines": "8,51",
+                        "endColumns": "12,24",
+                        "endOffsets": "349,2241"
+                    },
+                    "to": {
+                        "startLines": "2046,2803",
+                        "startColumns": "4,4",
+                        "startOffsets": "140550,181866",
+                        "endLines": "2052,2845",
+                        "endColumns": "12,24",
+                        "endOffsets": "140844,183753"
                     }
                 },
                 {
@@ -327,6 +308,25 @@
                         "startOffsets": "18772",
                         "endColumns": "53",
                         "endOffsets": "18821"
+                    }
+                },
+                {
+                    "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "54",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "267"
+                    },
+                    "to": {
+                        "startLines": "418",
+                        "startColumns": "4",
+                        "startOffsets": "30236",
+                        "endLines": "421",
+                        "endColumns": "12",
+                        "endOffsets": "30449"
                     }
                 },
                 {

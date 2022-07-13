@@ -9,203 +9,205 @@
 9        android:targetSdkVersion="31" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/debug/AndroidManifest.xml:5:5-77
-11-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/debug/AndroidManifest.xml:5:22-75
+11-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/debug/AndroidManifest.xml:5:22-75
 12    <uses-permission android:name="android.permission.VIBRATE" />
-12-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/debug/AndroidManifest.xml:6:5-65
-12-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/debug/AndroidManifest.xml:6:22-63
+12-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/debug/AndroidManifest.xml:6:5-65
+12-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/debug/AndroidManifest.xml:6:22-63
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:4:5-67
-13-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:4:22-64
+13-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:4:5-67
+13-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:4:22-64
 14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 14-->[com.facebook.flipper:flipper:0.125.0] /Users/saranya/.gradle/caches/transforms-3/0ae1dcc98161cd7687088e7c218bafb5/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:5-76
 14-->[com.facebook.flipper:flipper:0.125.0] /Users/saranya/.gradle/caches/transforms-3/0ae1dcc98161cd7687088e7c218bafb5/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:22-73
 15    <uses-permission android:name="android.permission.CAMERA" />
-15-->[:react-native-camera] /Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:9:5-65
-15-->[:react-native-camera] /Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:9:22-62
+15-->[:react-native-camera] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:9:5-65
+15-->[:react-native-camera] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:9:22-62
 16
 17    <uses-feature
-17-->[:react-native-camera] /Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
+17-->[:react-native-camera] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
 18        android:name="android.hardware.camera"
-18-->[:react-native-camera] /Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:12:9-47
+18-->[:react-native-camera] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:12:9-47
 19        android:required="false" />
-19-->[:react-native-camera] /Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:13:9-33
+19-->[:react-native-camera] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:13:9-33
 20    <uses-feature
-20-->[:react-native-camera] /Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
+20-->[:react-native-camera] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
 21        android:name="android.hardware.camera.autofocus"
-21-->[:react-native-camera] /Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:15:9-57
+21-->[:react-native-camera] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:15:9-57
 22        android:required="false" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-22-->[:react-native-camera] /Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:16:9-33
+22-->[:react-native-camera] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:16:9-33
 23    <!-- <uses-sdk android:minSdkVersion="14"/> -->
 24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 24-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/saranya/.gradle/caches/transforms-3/255c014ea8a9ef13bec319b79553960e/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
 24-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/saranya/.gradle/caches/transforms-3/255c014ea8a9ef13bec319b79553960e/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
 25
 26    <application
-26-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:6:5-25:19
+26-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:6:5-26:19
 27        android:name="com.imageplotting.MainApplication"
-27-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:7:7-38
+27-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:7:7-38
 28        android:allowBackup="false"
-28-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:11:7-34
+28-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:11:7-34
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 29-->[androidx.core:core:1.6.0] /Users/saranya/.gradle/caches/transforms-3/97f0783f956aee2f35ade8a33992ba14/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
 30        android:debuggable="true"
 31        android:icon="@mipmap/ic_launcher"
-31-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:9:7-41
+31-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:9:7-41
 32        android:label="@string/app_name"
-32-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:8:7-39
+32-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:8:7-39
 33        android:roundIcon="@mipmap/ic_launcher_round"
-33-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:10:7-52
+33-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:10:7-52
 34        android:theme="@style/AppTheme"
-34-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:12:7-38
+34-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:12:7-38
 35        android:usesCleartextTraffic="true" >
-35-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/debug/AndroidManifest.xml:9:9-44
+35-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/debug/AndroidManifest.xml:9:9-44
 36        <activity
-36-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/debug/AndroidManifest.xml:12:9-111
+36-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/debug/AndroidManifest.xml:12:9-111
 37            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-37-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/debug/AndroidManifest.xml:12:19-83
+37-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/debug/AndroidManifest.xml:12:19-83
 38            android:exported="false" />
-38-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/debug/AndroidManifest.xml:12:84-108
+38-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/debug/AndroidManifest.xml:12:84-108
 39        <activity
-39-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:13:7-24:18
+39-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:13:7-25:18
 40            android:name="com.imageplotting.MainActivity"
-40-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:14:9-37
+40-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:14:9-37
 41            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-41-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:16:9-118
+41-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:17:9-118
 42            android:exported="true"
-42-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:19:9-32
+42-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:20:9-32
 43            android:label="@string/app_name"
-43-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:15:9-41
+43-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:15:9-41
 44            android:launchMode="singleTask"
-44-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:17:9-40
-45            android:windowSoftInputMode="adjustResize" >
-45-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:18:9-51
-46            <intent-filter>
-46-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:20:9-23:25
-47                <action android:name="android.intent.action.MAIN" />
-47-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:21:13-65
-47-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:21:21-62
-48
-49                <category android:name="android.intent.category.LAUNCHER" />
-49-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:22:13-73
-49-->/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/src/main/AndroidManifest.xml:22:23-70
-50            </intent-filter>
-51        </activity>
-52
-53        <provider
-53-->[:react-native-webview] /Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
-54            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
-54-->[:react-native-webview] /Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-83
-55            android:authorities="com.imageplotting.fileprovider"
-55-->[:react-native-webview] /Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-64
-56            android:exported="false"
-56-->[:react-native-webview] /Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
-57            android:grantUriPermissions="true" >
-57-->[:react-native-webview] /Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
-58            <meta-data
-58-->[:react-native-webview] /Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:63
-59                android:name="android.support.FILE_PROVIDER_PATHS"
-59-->[:react-native-webview] /Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
-60                android:resource="@xml/file_provider_paths" />
-60-->[:react-native-webview] /Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-60
-61        </provider>
-62
-63        <service
-63-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/saranya/.gradle/caches/transforms-3/8269528ca393b7201df857cca8662364/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:9:9-15:19
-64            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
-64-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/saranya/.gradle/caches/transforms-3/8269528ca393b7201df857cca8662364/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:10:13-91
-65            android:directBootAware="true"
-65-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:17:13-43
-66            android:exported="false" >
-66-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/saranya/.gradle/caches/transforms-3/8269528ca393b7201df857cca8662364/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:11:13-37
-67            <meta-data
-67-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/saranya/.gradle/caches/transforms-3/8269528ca393b7201df857cca8662364/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:12:13-14:85
-68                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
-68-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/saranya/.gradle/caches/transforms-3/8269528ca393b7201df857cca8662364/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:13:17-120
-69                android:value="com.google.firebase.components.ComponentRegistrar" />
-69-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/saranya/.gradle/caches/transforms-3/8269528ca393b7201df857cca8662364/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:14:17-82
-70            <meta-data
-70-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/saranya/.gradle/caches/transforms-3/593f676eb1c43276ac74e3d0c9f57e70/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:12:13-14:85
-71                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
-71-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/saranya/.gradle/caches/transforms-3/593f676eb1c43276ac74e3d0c9f57e70/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:13:17-114
-72                android:value="com.google.firebase.components.ComponentRegistrar" />
-72-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/saranya/.gradle/caches/transforms-3/593f676eb1c43276ac74e3d0c9f57e70/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:14:17-82
-73            <meta-data
-73-->[com.google.android.gms:play-services-mlkit-text-recognition:16.3.0] /Users/saranya/.gradle/caches/transforms-3/fdca2e8965f1834af669ed7cedf39463/transformed/jetified-play-services-mlkit-text-recognition-16.3.0/AndroidManifest.xml:12:13-14:85
-74                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
-74-->[com.google.android.gms:play-services-mlkit-text-recognition:16.3.0] /Users/saranya/.gradle/caches/transforms-3/fdca2e8965f1834af669ed7cedf39463/transformed/jetified-play-services-mlkit-text-recognition-16.3.0/AndroidManifest.xml:13:17-114
-75                android:value="com.google.firebase.components.ComponentRegistrar" />
-75-->[com.google.android.gms:play-services-mlkit-text-recognition:16.3.0] /Users/saranya/.gradle/caches/transforms-3/fdca2e8965f1834af669ed7cedf39463/transformed/jetified-play-services-mlkit-text-recognition-16.3.0/AndroidManifest.xml:14:17-82
-76            <meta-data
-76-->[com.google.mlkit:vision-common:16.5.0] /Users/saranya/.gradle/caches/transforms-3/1b869476dc48efaadf7e765e4aa9c1ae/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:12:13-14:85
-77                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
-77-->[com.google.mlkit:vision-common:16.5.0] /Users/saranya/.gradle/caches/transforms-3/1b869476dc48efaadf7e765e4aa9c1ae/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:13:17-124
-78                android:value="com.google.firebase.components.ComponentRegistrar" />
-78-->[com.google.mlkit:vision-common:16.5.0] /Users/saranya/.gradle/caches/transforms-3/1b869476dc48efaadf7e765e4aa9c1ae/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:14:17-82
-79            <meta-data
-79-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:20:13-22:85
-80                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
-80-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:21:17-120
-81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:22:17-82
-82        </service>
-83
-84        <provider
-84-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:9:9-13:38
-85            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
-85-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:10:13-78
-86            android:authorities="com.imageplotting.mlkitinitprovider"
-86-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:11:13-69
-87            android:exported="false"
-87-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:12:13-37
-88            android:initOrder="99" />
-88-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:13:13-35
-89
-90        <service
-90-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/saranya/.gradle/caches/transforms-3/255c014ea8a9ef13bec319b79553960e/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
-91            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-91-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/saranya/.gradle/caches/transforms-3/255c014ea8a9ef13bec319b79553960e/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
-92            android:exported="false" >
-92-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/saranya/.gradle/caches/transforms-3/255c014ea8a9ef13bec319b79553960e/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
-93            <meta-data
-93-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/saranya/.gradle/caches/transforms-3/255c014ea8a9ef13bec319b79553960e/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
-94                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-94-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/saranya/.gradle/caches/transforms-3/255c014ea8a9ef13bec319b79553960e/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
-95                android:value="cct" />
-95-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/saranya/.gradle/caches/transforms-3/255c014ea8a9ef13bec319b79553960e/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
-96        </service>
-97        <service
-97-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/saranya/.gradle/caches/transforms-3/fdff938c8e3e5c15c56538d86acbf303/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
-98            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-98-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/saranya/.gradle/caches/transforms-3/fdff938c8e3e5c15c56538d86acbf303/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
-99            android:exported="false"
-99-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/saranya/.gradle/caches/transforms-3/fdff938c8e3e5c15c56538d86acbf303/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
-100            android:permission="android.permission.BIND_JOB_SERVICE" >
-100-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/saranya/.gradle/caches/transforms-3/fdff938c8e3e5c15c56538d86acbf303/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
-101        </service>
-102
-103        <receiver
-103-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/saranya/.gradle/caches/transforms-3/fdff938c8e3e5c15c56538d86acbf303/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
-104            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-104-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/saranya/.gradle/caches/transforms-3/fdff938c8e3e5c15c56538d86acbf303/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
-105            android:exported="false" />
-105-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/saranya/.gradle/caches/transforms-3/fdff938c8e3e5c15c56538d86acbf303/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
-106
-107        <activity
-107-->[com.google.android.gms:play-services-base:17.6.0] /Users/saranya/.gradle/caches/transforms-3/5f0846e5eed85c7da25920eb4003843f/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:23:9-26:75
-108            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-108-->[com.google.android.gms:play-services-base:17.6.0] /Users/saranya/.gradle/caches/transforms-3/5f0846e5eed85c7da25920eb4003843f/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:24:13-79
-109            android:exported="false"
-109-->[com.google.android.gms:play-services-base:17.6.0] /Users/saranya/.gradle/caches/transforms-3/5f0846e5eed85c7da25920eb4003843f/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:25:13-37
-110            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-110-->[com.google.android.gms:play-services-base:17.6.0] /Users/saranya/.gradle/caches/transforms-3/5f0846e5eed85c7da25920eb4003843f/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:26:13-72
-111
-112        <meta-data
-112-->[com.google.android.gms:play-services-basement:17.6.0] /Users/saranya/.gradle/caches/transforms-3/75ea41dd9c966b225b7174e22f02fe56/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:23:9-25:69
-113            android:name="com.google.android.gms.version"
-113-->[com.google.android.gms:play-services-basement:17.6.0] /Users/saranya/.gradle/caches/transforms-3/75ea41dd9c966b225b7174e22f02fe56/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:24:13-58
-114            android:value="@integer/google_play_services_version" />
-114-->[com.google.android.gms:play-services-basement:17.6.0] /Users/saranya/.gradle/caches/transforms-3/75ea41dd9c966b225b7174e22f02fe56/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:25:13-66
-115    </application>
-116
-117</manifest>
+44-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:18:9-40
+45            android:screenOrientation="portrait"
+45-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:16:9-45
+46            android:windowSoftInputMode="adjustResize" >
+46-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:19:9-51
+47            <intent-filter>
+47-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:21:9-24:25
+48                <action android:name="android.intent.action.MAIN" />
+48-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:22:13-65
+48-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:22:21-62
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:23:13-73
+50-->/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:23:23-70
+51            </intent-filter>
+52        </activity>
+53
+54        <provider
+54-->[:react-native-webview] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+55            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+55-->[:react-native-webview] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-83
+56            android:authorities="com.imageplotting.fileprovider"
+56-->[:react-native-webview] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-64
+57            android:exported="false"
+57-->[:react-native-webview] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+58            android:grantUriPermissions="true" >
+58-->[:react-native-webview] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+59            <meta-data
+59-->[:react-native-webview] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:63
+60                android:name="android.support.FILE_PROVIDER_PATHS"
+60-->[:react-native-webview] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+61                android:resource="@xml/file_provider_paths" />
+61-->[:react-native-webview] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-60
+62        </provider>
+63
+64        <service
+64-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/saranya/.gradle/caches/transforms-3/8269528ca393b7201df857cca8662364/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:9:9-15:19
+65            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+65-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/saranya/.gradle/caches/transforms-3/8269528ca393b7201df857cca8662364/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:10:13-91
+66            android:directBootAware="true"
+66-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:17:13-43
+67            android:exported="false" >
+67-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/saranya/.gradle/caches/transforms-3/8269528ca393b7201df857cca8662364/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:11:13-37
+68            <meta-data
+68-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/saranya/.gradle/caches/transforms-3/8269528ca393b7201df857cca8662364/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:12:13-14:85
+69                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+69-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/saranya/.gradle/caches/transforms-3/8269528ca393b7201df857cca8662364/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:13:17-120
+70                android:value="com.google.firebase.components.ComponentRegistrar" />
+70-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/saranya/.gradle/caches/transforms-3/8269528ca393b7201df857cca8662364/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:14:17-82
+71            <meta-data
+71-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/saranya/.gradle/caches/transforms-3/593f676eb1c43276ac74e3d0c9f57e70/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:12:13-14:85
+72                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+72-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/saranya/.gradle/caches/transforms-3/593f676eb1c43276ac74e3d0c9f57e70/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:13:17-114
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/saranya/.gradle/caches/transforms-3/593f676eb1c43276ac74e3d0c9f57e70/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:14:17-82
+74            <meta-data
+74-->[com.google.android.gms:play-services-mlkit-text-recognition:16.3.0] /Users/saranya/.gradle/caches/transforms-3/fdca2e8965f1834af669ed7cedf39463/transformed/jetified-play-services-mlkit-text-recognition-16.3.0/AndroidManifest.xml:12:13-14:85
+75                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+75-->[com.google.android.gms:play-services-mlkit-text-recognition:16.3.0] /Users/saranya/.gradle/caches/transforms-3/fdca2e8965f1834af669ed7cedf39463/transformed/jetified-play-services-mlkit-text-recognition-16.3.0/AndroidManifest.xml:13:17-114
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[com.google.android.gms:play-services-mlkit-text-recognition:16.3.0] /Users/saranya/.gradle/caches/transforms-3/fdca2e8965f1834af669ed7cedf39463/transformed/jetified-play-services-mlkit-text-recognition-16.3.0/AndroidManifest.xml:14:17-82
+77            <meta-data
+77-->[com.google.mlkit:vision-common:16.5.0] /Users/saranya/.gradle/caches/transforms-3/1b869476dc48efaadf7e765e4aa9c1ae/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:12:13-14:85
+78                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+78-->[com.google.mlkit:vision-common:16.5.0] /Users/saranya/.gradle/caches/transforms-3/1b869476dc48efaadf7e765e4aa9c1ae/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:13:17-124
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.mlkit:vision-common:16.5.0] /Users/saranya/.gradle/caches/transforms-3/1b869476dc48efaadf7e765e4aa9c1ae/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:14:17-82
+80            <meta-data
+80-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:20:13-22:85
+81                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+81-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:21:17-120
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:22:17-82
+83        </service>
+84
+85        <provider
+85-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:9:9-13:38
+86            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+86-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:10:13-78
+87            android:authorities="com.imageplotting.mlkitinitprovider"
+87-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:11:13-69
+88            android:exported="false"
+88-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:12:13-37
+89            android:initOrder="99" />
+89-->[com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/transforms-3/bcbd103e69074e62df90d55d42ef3aa3/transformed/jetified-common-17.2.0/AndroidManifest.xml:13:13-35
+90
+91        <service
+91-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/saranya/.gradle/caches/transforms-3/255c014ea8a9ef13bec319b79553960e/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+92            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+92-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/saranya/.gradle/caches/transforms-3/255c014ea8a9ef13bec319b79553960e/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+93            android:exported="false" >
+93-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/saranya/.gradle/caches/transforms-3/255c014ea8a9ef13bec319b79553960e/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+94            <meta-data
+94-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/saranya/.gradle/caches/transforms-3/255c014ea8a9ef13bec319b79553960e/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+95                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+95-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/saranya/.gradle/caches/transforms-3/255c014ea8a9ef13bec319b79553960e/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+96                android:value="cct" />
+96-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/saranya/.gradle/caches/transforms-3/255c014ea8a9ef13bec319b79553960e/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+97        </service>
+98        <service
+98-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/saranya/.gradle/caches/transforms-3/fdff938c8e3e5c15c56538d86acbf303/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+99            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+99-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/saranya/.gradle/caches/transforms-3/fdff938c8e3e5c15c56538d86acbf303/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+100            android:exported="false"
+100-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/saranya/.gradle/caches/transforms-3/fdff938c8e3e5c15c56538d86acbf303/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+101            android:permission="android.permission.BIND_JOB_SERVICE" >
+101-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/saranya/.gradle/caches/transforms-3/fdff938c8e3e5c15c56538d86acbf303/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+102        </service>
+103
+104        <receiver
+104-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/saranya/.gradle/caches/transforms-3/fdff938c8e3e5c15c56538d86acbf303/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+105            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+105-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/saranya/.gradle/caches/transforms-3/fdff938c8e3e5c15c56538d86acbf303/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+106            android:exported="false" />
+106-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/saranya/.gradle/caches/transforms-3/fdff938c8e3e5c15c56538d86acbf303/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+107
+108        <activity
+108-->[com.google.android.gms:play-services-base:17.6.0] /Users/saranya/.gradle/caches/transforms-3/5f0846e5eed85c7da25920eb4003843f/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:23:9-26:75
+109            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+109-->[com.google.android.gms:play-services-base:17.6.0] /Users/saranya/.gradle/caches/transforms-3/5f0846e5eed85c7da25920eb4003843f/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:24:13-79
+110            android:exported="false"
+110-->[com.google.android.gms:play-services-base:17.6.0] /Users/saranya/.gradle/caches/transforms-3/5f0846e5eed85c7da25920eb4003843f/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:25:13-37
+111            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+111-->[com.google.android.gms:play-services-base:17.6.0] /Users/saranya/.gradle/caches/transforms-3/5f0846e5eed85c7da25920eb4003843f/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:26:13-72
+112
+113        <meta-data
+113-->[com.google.android.gms:play-services-basement:17.6.0] /Users/saranya/.gradle/caches/transforms-3/75ea41dd9c966b225b7174e22f02fe56/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:23:9-25:69
+114            android:name="com.google.android.gms.version"
+114-->[com.google.android.gms:play-services-basement:17.6.0] /Users/saranya/.gradle/caches/transforms-3/75ea41dd9c966b225b7174e22f02fe56/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:24:13-58
+115            android:value="@integer/google_play_services_version" />
+115-->[com.google.android.gms:play-services-basement:17.6.0] /Users/saranya/.gradle/caches/transforms-3/75ea41dd9c966b225b7174e22f02fe56/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:25:13-66
+116    </application>
+117
+118</manifest>

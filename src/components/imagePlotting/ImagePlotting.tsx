@@ -1,7 +1,7 @@
 import * as React from "react";
 import {Dimensions, Image, StyleSheet, Text, View} from 'react-native';
 import Canvas, {Image as CanvasImage} from 'react-native-canvas';
-import imagePng from "./img1.png";
+import imagePng from "./library01.jpeg";
 import {getAllBooks} from "../../services/BookService";
 
 
@@ -30,7 +30,7 @@ const ImagePlotting = (): JSX.Element => {
         ctx.lineTo(300,530);
         ctx.stroke();
         getAllBooks().then((response) => {
-            alert(response.data.success);
+           // alert(response.data.success);
         }).catch((reason) => {
             console.log(reason);
         })

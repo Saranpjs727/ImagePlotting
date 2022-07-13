@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml",
+            "outputFile": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "/Users/saranya/.gradle/caches/transforms-3/75ea41dd9c966b225b7174e22f02fe56/transformed/jetified-play-services-basement-17.6.0/res/values-ko/values.xml",

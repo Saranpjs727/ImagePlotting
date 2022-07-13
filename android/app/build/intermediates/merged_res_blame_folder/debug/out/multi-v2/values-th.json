@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/saranya/Downloads/Sharan_Project/react_native/git/ORIGINS/ImagePlotting/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml",
+            "outputFile": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml",
             "map": [
                 {
                     "source": "/Users/saranya/.gradle/caches/transforms-3/5f0846e5eed85c7da25920eb4003843f/transformed/jetified-play-services-base-17.6.0/res/values-th/values.xml",
