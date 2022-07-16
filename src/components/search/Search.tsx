@@ -2,27 +2,22 @@ import * as React from "react";
 import { Searchbar } from 'react-native-paper';
 import {StyleSheet} from "react-native";
 
+interface SearchProps {
+    searchQuery : string
+    onChangeSearch : (query: string) => void
+}
 
-const Search = (): JSX.Element => {
-    const [searchQuery, setSearchQuery] = React.useState('');
-    const onChangeSearch = (query) => {
-        setSearchQuery(query)
-    } ;
+const Search = ({searchQuery, onChangeSearch}:SearchProps): JSX.Element => {
 
     return (
         <>
-            {/*<SearchBar*/}
-            {/*    placeholder="Type Here..."*/}
-            {/*    onChangeText={onChangeSearch}*/}
-            {/*    value={searchQuery}*/}
-            {/*    style={styles.searchBar}*/}
-            {/*/>*/}
             <Searchbar
                 placeholder="Search"
                 onChangeText={onChangeSearch}
                 value={searchQuery}
                 style={styles.searchBar}
                 iconColor = {"black"}
+                keyboardType = "default"
             />
         </>
 
@@ -34,6 +29,7 @@ const styles = StyleSheet.create({
     searchBar: {
         borderRadius: 30,
         borderColor: "black",
+        height:45
     }
 });
 

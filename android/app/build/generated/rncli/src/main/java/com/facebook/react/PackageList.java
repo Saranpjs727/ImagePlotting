@@ -19,6 +19,8 @@ import com.swmansion.gesturehandler.RNGestureHandlerPackage;
 import com.zoontek.rnpermissions.RNPermissionsPackage;
 // react-native-safe-area-context
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
+// react-native-screens
+import com.swmansion.rnscreens.RNScreensPackage;
 // react-native-vector-icons
 import com.oblador.vectoricons.VectorIconsPackage;
 // react-native-webview
@@ -72,6 +74,7 @@ public class PackageList {
       new RNGestureHandlerPackage(),
       new RNPermissionsPackage(),
       new SafeAreaContextPackage(),
+      new RNScreensPackage(),
       new VectorIconsPackage(),
       new RNCWebViewPackage()
     ));
