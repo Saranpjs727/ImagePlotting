@@ -3,32 +3,32 @@ import {Dimensions, Image, StyleSheet, Text, View, Pressable} from "react-native
 import StarRating from "react-native-star-rating";
 import Icon from "react-native-vector-icons/FontAwesome";
 import {useNavigation} from "@react-navigation/native";
+import images from "../../local-data/assets/images"
 const { width, height } = Dimensions.get('window');
 
 interface BookDetailProps {
-    onClickNavigate: () => void
+    item: any;
 }
 
 
-const BookDetail = ({onClickNavigate}: BookDetailProps): JSX.Element => {
+const BookDetail = ({item} : BookDetailProps): JSX.Element => {
 
     const navigation = useNavigation();
-
-    const description = 'A Transitional Reference provides A Transitional Reference providesA Transitional Reference provides a “crash course” in beginning pure mathematics, offering instruction on a blendof inductive and deductive reasoning offering instruction on a blendof inductive and deductive reasoning';
+    //const imgUrl =  require(''+item.img);
 
     return (
       <>
         <View style={styles.container}>
             <View style={styles.bookDetailsMain}>
-                <Image  style={styles.bookImage} source = {require('./book.jpeg')}  testID = "img1"/>
-                <Text numberOfLines= {1} style={styles.bookName}>Advances in Mathematics Advances in Mathematics Advances in Mathematics Advances in Mathematics </Text>
-                <Text numberOfLines= {1} style={styles.bookDet}>2019  | Education</Text>
+                <Image  style={styles.bookImage} source={images[item.id]}  testID = "img1"/>
+                <Text numberOfLines= {1} style={styles.bookName}>{item.name}</Text>
+                <Text numberOfLines= {1} style={styles.bookDet}>{item.year} | {item.publisher}</Text>
             </View>
             <View style={styles.starContainer}>
                 <StarRating
                     maxStars = {5}
                     disabled = {true}
-                    rating = {4}
+                    rating = {item.rating}
                     fullStarColor = {'black'}
                     starSize= {15}
                     starStyle={styles.starStyle}
@@ -36,20 +36,20 @@ const BookDetail = ({onClickNavigate}: BookDetailProps): JSX.Element => {
             </View>
             <View style={styles.bookDetails}>
                 <Text style={styles.bookHeading}>Description</Text>
-                <Text numberOfLines={4} style={styles.bookDes}>{description}</Text>
+                <Text numberOfLines={4} style={styles.bookDes}>{item.description}</Text>
             </View>
             <View>
                 <Text style={styles.bookHeading}>Location</Text>
                 <View style={styles.locationDetails}>
-                    <Text numberOfLines={1} style={styles.bookLocation}>First Floor</Text>
+                    <Text numberOfLines={1} style={styles.bookLocation}>{item.floorr}</Text>
                     <Icon name="arrow-right" size={20} color="#373647" style={styles.arrowIcon}/>
-                    <Text style={styles.bookLocation}>Blue Zone</Text>
+                    <Text style={styles.bookLocation}>{item.zone}</Text>
                 </View>
             </View>
             <View style={styles.buttonContainer} >
                 <Pressable style={styles.button}  onPress={() => { // @ts-ignore
                     navigation.navigate('Scanner')}}>
-                    <Text>Navigate</Text>
+                    <Text style={styles.NavigateText}>Navigate</Text>
                 </Pressable>
             </View>
         </View>
@@ -82,10 +82,12 @@ const styles = StyleSheet.create({
         marginTop: 20,
         fontWeight: 'bold',
         fontSize: 15,
+        color: '#808080'
     },
     bookDet: {
         fontSize: 14,
-        marginTop:5
+        marginTop:5,
+        color: '#808080'
     },
     starContainer: {
         alignItems: 'center'
@@ -95,24 +97,27 @@ const styles = StyleSheet.create({
     },
     bookDetails:{
         marginTop:20,
-        minHeight: 120
+        minHeight: 120,
     },
     bookHeading : {
         fontSize: 14,
+        color: '#808080'
     },
     bookDes : {
         marginTop: 10,
         fontSize: 12,
         lineHeight: 18,
+        color: '#808080'
     },
     locationDetails: {
         marginTop: 10,
         display: "flex",
         flexDirection: 'row',
-        justifyContent: "center"
+        justifyContent: "center",
     },
     bookLocation : {
         fontSize: 14,
+        color: '#808080'
     },
     arrowIcon: {
         marginLeft: 10,
@@ -131,7 +136,10 @@ const styles = StyleSheet.create({
         borderRadius: 23,
         elevation: 3,
         backgroundColor: '#e1e1e1',
-        marginTop: 30
+        marginTop: 30,
+    },
+    NavigateText:{
+        color: '#808080'
     }
 });
 

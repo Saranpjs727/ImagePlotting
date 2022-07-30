@@ -122,6 +122,7 @@
     <color name="common_google_signin_btn_text_light_disabled">#1F000000</color>
     <color name="common_google_signin_btn_text_light_focused">#90000000</color>
     <color name="common_google_signin_btn_text_light_pressed">#DE000000</color>
+    <color name="default_overlay_color">#AAFFFFFF</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
     <color name="design_dark_default_color_background">#121212</color>
     <color name="design_dark_default_color_error">#CF6679</color>
@@ -653,6 +654,8 @@
     <integer name="bottom_sheet_slide_duration">150</integer>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="config_tooltipAnimTime">150</integer>
+    <integer name="default_blur_radius">15</integer>
+    <integer name="default_downsample_factor">8</integer>
     <integer name="design_snackbar_text_max_lines">2</integer>
     <integer name="design_tab_indicator_anim_duration_ms">300</integer>
     <integer name="google_play_services_version">12451000</integer>
@@ -1400,7 +1403,7 @@
     <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button</item>
     <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
 
-    <!-- Shape styles -->
+    <!-- Modal styles -->
     <item name="shapeAppearanceSmallComponent">
       @style/ShapeAppearance.MaterialComponents.SmallComponent
     </item>
@@ -1506,7 +1509,7 @@
     <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button</item>
     <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
 
-    <!-- Shape styles -->
+    <!-- Modal styles -->
     <item name="shapeAppearanceSmallComponent">
       @style/ShapeAppearance.MaterialComponents.SmallComponent
     </item>
@@ -1619,7 +1622,7 @@
     <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button</item>
     <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
 
-    <!-- Shape styles -->
+    <!-- Modal styles -->
     <item name="shapeAppearanceSmallComponent">
       @style/ShapeAppearance.MaterialComponents.SmallComponent
     </item>
@@ -1667,7 +1670,7 @@
     <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button</item>
     <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
 
-    <!-- Shape styles -->
+    <!-- Modal styles -->
     <item name="shapeAppearanceSmallComponent">
       @style/ShapeAppearance.MaterialComponents.SmallComponent
     </item>
@@ -1773,7 +1776,7 @@
     <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button</item>
     <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
 
-    <!-- Shape styles -->
+    <!-- Modal styles -->
     <item name="shapeAppearanceSmallComponent">
       @style/ShapeAppearance.MaterialComponents.SmallComponent
     </item>
@@ -5303,6 +5306,14 @@
       <enum name="BOTTOM_START" value="8388691"/>
     </attr>
   </declare-styleable>
+    <declare-styleable name="BlurView">
+        <attr format="color" name="blurOverlayColor"/>
+    </declare-styleable>
+    <declare-styleable name="BlurringView">
+        <attr format="integer" name="blurRadius"/>
+        <attr format="integer" name="downsampleFactor"/>
+        <attr format="color" name="overlayColor"/>
+    </declare-styleable>
     <declare-styleable name="BottomAppBar">
     <!-- Background for the BottomAppBar. -->
     <attr name="backgroundTint"/>
@@ -5400,10 +5411,10 @@
     <!-- The top offset of the BottomSheet in the expanded-state when fitsToContent is false.
          The default value is 0, which results in the sheet matching the parent's top. -->
     <attr format="reference|integer" name="behavior_expandedOffset"/>
-    <!-- Shape appearance style reference for BottomSheet. Attribute declaration is in the shape
+    <!-- Modal appearance style reference for BottomSheet. Attribute declaration is in the shape
          package. -->
      <attr name="shapeAppearance"/>
-    <!-- Shape appearance overlay style reference for BottomSheet. To be used to augment attributes
+    <!-- Modal appearance overlay style reference for BottomSheet. To be used to augment attributes
          declared in the shapeAppearance. Attribute declaration is in the shape package. -->
     <attr name="shapeAppearanceOverlay"/>
     <!-- Background color used by the BottomSheetBehavior background drawable when shape theming is
@@ -5582,11 +5593,11 @@
     <!-- Motion spec for hide animation. This should be a MotionSpec resource. -->
     <attr name="hideMotionSpec"/>
 
-    <!-- Shape appearance style reference for Chip. Attribute declaration is in the Shape
+    <!-- Modal appearance style reference for Chip. Attribute declaration is in the Modal
      package. -->
     <attr name="shapeAppearance"/>
-    <!-- Shape appearance overlay style reference for Chip. To be used to augment attributes
-         declared in the shapeAppearance. Attribute declaration is in the Shape package. -->
+    <!-- Modal appearance overlay style reference for Chip. To be used to augment attributes
+         declared in the shapeAppearance. Attribute declaration is in the Modal package. -->
     <attr name="shapeAppearanceOverlay"/>
 
     <!-- The following attributes are adjustable padding on the chip, listed from start to end. -->
@@ -5959,10 +5970,10 @@
     <attr name="showMotionSpec"/>
     <!-- Motion spec for hide animation. This should be a MotionSpec resource. -->
     <attr name="hideMotionSpec"/>
-    <!-- Shape appearance style reference for FloatingActionButton. Attribute declaration
+    <!-- Modal appearance style reference for FloatingActionButton. Attribute declaration
          is in the shape package. -->
     <attr name="shapeAppearance"/>
-    <!-- Shape appearance overlay style reference for FloatingActionButton. -->
+    <!-- Modal appearance overlay style reference for FloatingActionButton. -->
     <attr name="shapeAppearanceOverlay"/>
   </declare-styleable>
     <declare-styleable name="FloatingActionButton_Behavior_Layout">
@@ -6361,11 +6372,11 @@
     <attr format="color" name="iconTint"/>
     <!-- Tint mode for icon drawable to display. -->
     <attr name="iconTintMode"/>
-    <!-- Shape appearance style reference for MaterialButton. Attribute declaration is in the Shape
+    <!-- Modal appearance style reference for MaterialButton. Attribute declaration is in the Modal
      package. -->
     <attr name="shapeAppearance"/>
-    <!-- Shape appearance overlay style reference for MaterialButton. To be used to augment
-         attributes declared in the shapeAppearance. Attribute declaration is in the Shape package.
+    <!-- Modal appearance overlay style reference for MaterialButton. To be used to augment
+         attributes declared in the shapeAppearance. Attribute declaration is in the Modal package.
     -->
     <attr name="shapeAppearanceOverlay"/>
     <!-- Specifies the color used to draw the path outline of the button. Attribute type definition
@@ -6433,10 +6444,10 @@
          resources package. -->
     <attr name="strokeWidth"/>
 
-    <!-- Shape appearance style reference for MaterialCardView. Attribute declaration is in the
+    <!-- Modal appearance style reference for MaterialCardView. Attribute declaration is in the
          shape package. -->
     <attr name="shapeAppearance"/>
-    <!-- Shape appearance overlay style reference for MaterialCardView. To be used to augment
+    <!-- Modal appearance overlay style reference for MaterialCardView. To be used to augment
          attributes declared in the shapeAppearance. Attribute declaration is in the shape package.
          -->
     <attr name="shapeAppearanceOverlay"/>
@@ -6458,9 +6469,9 @@
     <attr name="useMaterialThemeColors"/>
   </declare-styleable>
     <declare-styleable name="MaterialShape">
-    <!-- Shape appearance style reference to be used to construct a ShapeAppearanceModel. -->
+    <!-- Modal appearance style reference to be used to construct a ShapeAppearanceModel. -->
     <attr format="reference" name="shapeAppearance"/>
-    <!-- Shape appearance overlay style reference to be used to modify the shapeAppearance. -->
+    <!-- Modal appearance overlay style reference to be used to modify the shapeAppearance. -->
     <attr format="reference" name="shapeAppearanceOverlay"/>
   </declare-styleable>
     <declare-styleable name="MaterialTextAppearance" parent="TextAppearance">
@@ -6683,11 +6694,11 @@
     <attr format="dimension" name="itemIconSize"/>
     <!-- Makes the TextView of the item text be at most this many lines tall.  -->
     <attr format="integer" min="1" name="itemMaxLines"/>
-    <!-- Shape appearance style reference for the shaped item background. To use the shaped
+    <!-- Modal appearance style reference for the shaped item background. To use the shaped
          item background, either itemShapeAppearance or itemShapeAppearanceOverlay must be set and
          itemBackground must be null so that it can be set programmatically. -->
     <attr name="itemShapeAppearance"/>
-    <!-- Shape appearance overlay style reference for item background. To be used to augment
+    <!-- Modal appearance overlay style reference for item background. To be used to augment
          attributes declared in itemShapeAppearance. To use the shaped item background, either
          itemShapeAppearance or itemShapeAppearanceOverlay must be set and itemBackground must be
          null so that it can be set programmatically. -->
@@ -7363,11 +7374,11 @@
          underline stroke in filled mode.. -->
     <attr format="dimension" name="boxStrokeWidthFocused"/>
 
-    <!-- Shape appearance style reference for TextInputLayout. Attribute declaration is in the Shape
+    <!-- Modal appearance style reference for TextInputLayout. Attribute declaration is in the Modal
         package. -->
     <attr name="shapeAppearance"/>
-    <!-- Shape appearance overlay style reference for TextInputLayout. To be used to augment
-         attributes declared in the shapeAppearance. Attribute declaration is in the Shape
+    <!-- Modal appearance overlay style reference for TextInputLayout. To be used to augment
+         attributes declared in the shapeAppearance. Attribute declaration is in the Modal
          package. -->
     <attr name="shapeAppearanceOverlay"/>
 

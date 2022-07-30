@@ -1,57 +1,63 @@
 'use strict';
 import * as React from "react";
-import {Component, useRef, useState} from 'react';
 
 import {
+    Alert,
     AppRegistry,
     StyleSheet,
     Text,
-    TouchableOpacity, View,
 } from 'react-native';
 
 import QRCodeScanner from 'react-native-qrcode-scanner';
-import { RNCamera } from 'react-native-camera';
-import ImagePlotting from "../imagePlotting/ImagePlotting";
+import {RNCamera} from 'react-native-camera';
+import {useNavigation} from "@react-navigation/native";
+import {useState} from "react";
 
+interface BookDetailProps {
+    item: any;
+}
 
+const showAlert = (navigation:any, message: string, isBarCodeValidator : boolean) =>
+    Alert.alert(
+        "",
+        ""+message,
+        [
+            { text: "OK", onPress: () => {
+                    isBarCodeValidator ?
+                        navigation.navigate('BookDetail', {}) :  ""
+                }
+            }
+        ]
+    );
 
-const ScanScreen = (): JSX.Element => {
-
+const ScanScreen = ({item} : BookDetailProps): JSX.Element => {
+    const[isBarcodeScanned, setIsBarcodeScanned] = useState(false);
+    const navigation = useNavigation();
     let scanner;
-    const [isReactive, setIsReactive] = useState<boolean>(false);
-
     const onSuccess = e => {
-        if(e.data.toLowerCase().toString() === 'library1'){
-            setIsReactive(true);
-           // scanner.reactivate(false);
-            //scanner._setScanning(false);
+        if(e.data.toLowerCase().toString() === item.qrcode){
+            setIsBarcodeScanned(true);
+            navigation.navigate('ImagePlotting', {})
         }else{
-            //scanner.reactivate(true);
-            // scanner._setScanning(true);
-            alert(e.data+ " Barcode is wrong. Kindly scan proper bar code");
-            setIsReactive(false);
+            showAlert(navigation, "Barcode is wrong. Kindly scan proper bar code", true);
         }
     };
 
     return (
         <>
             <QRCodeScanner
-                ref = {(camera) => { scanner = camera }}
-                //reactivate={false}
-                onRead={onSuccess}
-                flashMode={RNCamera.Constants.FlashMode.off}
-                topContent={
-                    <Text style={styles.centerText}>
-                        Scan proper bar code to view the library map!!!
-                    </Text>
-                }
-                bottomContent={
-                    <TouchableOpacity style={styles.buttonTouchable}>
-                        <Text style={styles.buttonText}>OK. Got it!</Text>
-                    </TouchableOpacity>
-                }
+            ref = {(camera) => { scanner = camera }}
+            vibrate = {false}
+            fadeIn = {true}
+            onRead={onSuccess}
+            flashMode={RNCamera.Constants.FlashMode.off}
+            topContent={
+                <Text style={styles.centerText}>
+                Scan the QR for the book location
+                </Text>
+            }
+            containerStyle = {styles.containerStyle}
             />
-            {isReactive ? <ImagePlotting/> : <></>}
         </>
     );
 }
@@ -73,6 +79,9 @@ const styles = StyleSheet.create({
     },
     buttonTouchable: {
         padding: 16
+    },
+    containerStyle:{
+
     }
 });
 

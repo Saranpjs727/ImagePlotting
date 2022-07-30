@@ -2,6 +2,7 @@ import * as React from "react";
 import {FlatList, Image, StyleSheet, View, Text, Alert} from "react-native"
 import StarRating from "react-native-star-rating";
 import Icon  from 'react-native-vector-icons/FontAwesome';
+import images from "../../local-data/assets/images"
 
 interface BookDetailsProps {
     books : any[],
@@ -9,7 +10,7 @@ interface BookDetailsProps {
     navigation: any
 }
 
-const List = ({onBookClick, books, navigation} : BookDetailsProps): JSX.Element => {
+const List = ({books, navigation, onBookClick} : BookDetailsProps): JSX.Element => {
 
     return (
         <>
@@ -21,7 +22,7 @@ const List = ({onBookClick, books, navigation} : BookDetailsProps): JSX.Element 
                     <View style={styles.bookMainContainer}>
                         <View style={styles.bookContainer}>
                             <View>
-                                <Image  style={styles.bookImage} source = {require('./book.jpeg')}  testID = "img1"/>
+                                <Image  style={styles.bookImage} source={images[item.id]}  testID = "img1"/>
                             </View>
                             <View  style={styles.bookDetails} >
                                 <Text numberOfLines={1} style={styles.bookName}>{item.name} {item.name} {item.name}</Text>
@@ -36,9 +37,11 @@ const List = ({onBookClick, books, navigation} : BookDetailsProps): JSX.Element 
                                     starStyle={styles.starStyle}
                                 />
                             </View>
-                            <Icon name="arrow-right" size={20} color="#373647"
+                            <Icon name="chevron-right" size={20} color="#373647"
                                onPress={() => {
-                                   navigation.navigate('BookDetail', {onBookClick})}} style={styles.bookIcon}/>
+                                   onBookClick(item.id);
+                                   navigation.navigate('BookDetail', {})
+                               }} style={styles.bookIcon}/>
                         </View>
                     </View>
 
@@ -88,11 +91,13 @@ const styles = StyleSheet.create({
         flexDirection: "column"
     },
     bookName:{
-        fontSize: 15
+        fontSize: 15,
+        color: '#808080'
     },
     bookDet: {
         fontSize: 12,
-        marginTop:3
+        marginTop:3,
+        color: '#808080'
     },
     bookRating: {
         marginTop:3

@@ -2,29 +2,19 @@ import * as React from "react";
 import {Dimensions, StyleSheet, Text, View} from "react-native";
 import Search from "../search/Search";
 import List from "../list/List";
-import {useState} from "react";
 import { useNavigation } from '@react-navigation/native';
-
 const { width, height } = Dimensions.get('screen');
 
-
 interface BookPageProps {
+    books : any;
     onBookClick: (id:bigint) => void
 }
 
-const BookList = ({onBookClick}: BookPageProps): JSX.Element => {
+const BookList = ({books, onBookClick} : BookPageProps ): JSX.Element => {
     const navigation = useNavigation();
 
     const [searchQuery, setSearchQuery] = React.useState('');
     const [isBookSearched, setIsBookSearched] = React.useState<boolean>(false);
-    const [books, setBooks] = useState([
-        { id: 1, img: 'book', year: '2019', publisher: 'Education',rating : 4, name: 'Advances in Mathematics'},
-        { id: 2, img: 'book', year: '2020', publisher: 'Education',rating : 2, name: 'Advances in Mathematics'},
-        { id: 3, img: 'book', year: '2021', publisher: 'Education',rating : 5, name: 'Advances in React'},
-        { id: 4, img: 'book', year: '2023', publisher: 'Education',rating : 4, name: 'Advances in Program'},
-        { id: 5, img: 'book', year: '2018', publisher: 'Education',rating : 4, name: 'Advances in Cloud'},
-        { id: 6, img: 'book', year: '2019', publisher: 'Education',rating : 2, name: 'Advances in Database'}
-    ]);
 
     const onChangeSearch = (query: any) => {
         setIsBookSearched(true);
@@ -51,8 +41,8 @@ const BookList = ({onBookClick}: BookPageProps): JSX.Element => {
                 <View style={styles.list}>
                     <List
                         books ={filteredBook}
-                        onBookClick = {onBookClick}
                         navigation={ navigation}
+                        onBookClick = {onBookClick}
                     />
                 </View>
             </View>
