@@ -9,7 +9,10 @@ import {NavigationContainer } from "@react-navigation/native";
 // @ts-ignore
 import bookData from "../../local-data/book.json";
 import ImagePlotting from "../imagePlotting/ImagePlotting";
+import CarouselView from "../carousel/CarouselView";
 const { width } = Dimensions.get('screen');
+import { HeaderBackButton } from '@react-navigation/elements';
+
 
 const Header =():JSX.Element => {
     const [books, setBooks] = useState(bookData);
@@ -24,18 +27,26 @@ const Header =():JSX.Element => {
         <>
             <NavigationContainer>
                 <Stack.Navigator>
-                    <Stack.Screen name="Favourites">
+                    <Stack.Screen name="Favourites" options={{ title: 'Favourites' }}>
                         {(props) => <BookList {...props} books = {books} onBookClick = {onBookClick}/>}
                     </Stack.Screen>
-                    <Stack.Screen name="BookDetail" >
+                    <Stack.Screen name="BookDetail"  options={{ title: 'Favourites' }} >
                         {(props) => <BookDetail {...props} item = {searchedBook}/>}
                     </Stack.Screen>
-                    <Stack.Screen name="Scanner" >
+                    <Stack.Screen name="QRScanner"  options={{ title: 'QR Code Scanner' }}>
                         {(props) => <ScanScreen {...props} item = {searchedBook}/>}
                     </Stack.Screen>
-                    <Stack.Screen name="ImagePlotting" >
+                    <Stack.Screen name="BookRoute"  options={({ navigation }) => (
+                             {   title: 'Book Path',
+                                 headerLeft: (props) =>(
+                            <HeaderBackButton {...props} onPress={() => navigation.popToTop()}/>
+                        )})}>
                         {(props) => <ImagePlotting {...props} item = {searchedBook}/>}
                     </Stack.Screen>
+                    <Stack.Screen name="BookView"  options={{ title: '' }}>
+                        {(props) => <CarouselView {...props} item = {searchedBook}/>}
+                    </Stack.Screen>
+                    {/*{headerLeft:() => navigation.popToTop()}*/}
                 </Stack.Navigator>
             </NavigationContainer>
         </>

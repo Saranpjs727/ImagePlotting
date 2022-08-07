@@ -37,7 +37,7 @@ const ScanScreen = ({item} : BookDetailProps): JSX.Element => {
     const onSuccess = e => {
         if(e.data.toLowerCase().toString() === item.qrcode){
             setIsBarcodeScanned(true);
-            navigation.navigate('ImagePlotting', {})
+            navigation.navigate('BookRoute', {})
         }else{
             showAlert(navigation, "Barcode is wrong. Kindly scan proper bar code", true);
         }

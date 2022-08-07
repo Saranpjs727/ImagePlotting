@@ -21,7 +21,6 @@ const Search = ({searchQuery, onChangeSearch}:SearchProps): JSX.Element => {
             />
         </>
 
-
     )
 }
 

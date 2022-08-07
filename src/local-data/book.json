@@ -14,6 +14,7 @@
     "floorName" : "Davidwilson",
     "locationName" : "Geological Survey",
     "noOfLocatedImages" : ["1_01","1_02"],
+    "navigationSteps": ["First Floor","Geological Survey(Yellow Zone)","Geo/ SUR 551.0954","Shelf 523.2"],
     "pointerStartingCoordinate" : {
       "x" : 100,
       "y" : 45
@@ -56,6 +57,7 @@
     "floorName" : "Davidwilson",
     "locationName" : "Geological Survey",
     "noOfLocatedImages" : ["1_01","1_02"],
+    "navigationSteps": ["First Floor","Geological Survey(Yellow Zone)","Geo/ SUR 551.0954","Shelf 523.2"],
     "pointerStartingCoordinate" : {
       "x" : 100,
       "y" : 45
@@ -98,6 +100,7 @@
     "floorName" : "Davidwilson",
     "locationName" : "Geological Survey",
     "noOfLocatedImages" : ["1_01","1_02"],
+    "navigationSteps": ["First Floor","Geological Survey(Yellow Zone)","Geo/ SUR 551.0954","Shelf 523.2"],
     "pointerStartingCoordinate" : {
       "x" : 100,
       "y" : 45

@@ -1,14 +1,12 @@
 import * as React from "react";
-import {Alert, Dimensions, Image, StyleSheet, View} from 'react-native';
+import {Alert, BackHandler, Dimensions, Image, StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 import Canvas, {Image as CanvasImage} from 'react-native-canvas';
 import {useEffect, useState} from "react";
-import image from "../../local-data/assets/imageLocations"
 import images from "../../local-data/assets/floorImage"
-import Modal from './Modal';
-import Carousel from 'react-native-snap-carousel';
-
-
+import {useFocusEffect, useNavigation} from "@react-navigation/native";
 const { width, height } = Dimensions.get('screen');
+import SwipeUpDown from 'react-native-swipe-up-down';
+import SwipeModal from "../modal/SwipeModal";
 
 interface BookDetailProps {
     item: any;
@@ -28,17 +26,28 @@ const showAlert = (message: string, setIsNavigationClicked: any) =>
 
 const ImagePlotting = ({item} : BookDetailProps): JSX.Element => {
 
-    let carousel;
     const[isNavigationClicked, setIsNavigationClicked] = useState(false);
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [isTickClicked, setIsTickClicked] = useState(false);
     const imageWidth =  width;
     const imageHeight = height - 250;
+    const navigation = useNavigation();
 
     useEffect(() =>{
        showAlert("Go to "+item.floorr+" to start Navigation", setIsNavigationClicked);
     }, [])
 
+
+
+    useFocusEffect(
+        React.useCallback(() => {
+            const onBackPress = () => {
+                navigation.navigate("Favourites");
+                return true;
+            };
+            BackHandler.addEventListener('hardwareBackPress', onBackPress); // detect back button press
+            return () =>
+                BackHandler.removeEventListener('hardwareBackPress', onBackPress);
+        }, [])
+    );
 
     const handleCanvas = (canvas: any) => {
         if (canvas !== null) {
@@ -98,42 +107,39 @@ const ImagePlotting = ({item} : BookDetailProps): JSX.Element => {
     }
 
     const onClickTick = () =>{
-        setIsTickClicked(true);
-    }
-
-    const _renderItem = ({item, index}) => {
-        return (
-            <View>
-                <Image source={image[item]}  testID = "img1"/>
-            </View>
-        );
+        navigation.navigate('BookView', {})
     }
 
     return (
             <View style={styles.container}>
                 <View style={styles.canvas}>
-                    {
-                        !isTickClicked ? <Canvas ref={handleCanvas} />
-                        :
-                        <Carousel
-                            ref={ref => carousel = ref}
-                            data={item.noOfLocatedImages}
-                            renderItem={_renderItem}
-                            sliderWidth={width}
-                            itemWidth={width}
-                            onSnapToItem = { index => setActiveIndex(index) }
+                     <Canvas ref={handleCanvas} />
+                </View>
+                <SwipeUpDown
+                    itemMini={
+                        <SwipeModal
+                            item={item}
+                            onClickTick = {onClickTick}
+                            isMini = {true}
                         />
                     }
-                </View>
-                <View style={styles.modal}>
-                    <Modal
-                        type={"rounded-square"}
-                        item={item}
-                        onClickTick = {onClickTick}
-                        isTickClicked = {isTickClicked}
-                        activeIndex = {activeIndex}
-                    />
-                </View>
+                    itemFull={
+                        <SwipeModal
+                            item={item}
+                            onClickTick = {onClickTick}
+                            isMini = {false}
+                        />
+                    }
+                    onShowMini={() => console.log('mini')}
+                    onShowFull={() => console.log('full')}
+                    animation="spring"
+                    disableSwipeIcon = {false}
+                    extraMarginTop={120}
+                    iconColor='grey'
+                    iconSize={30}
+                    swipeHeight={170}
+                    style={styles.swipeUp}
+                />
             </View>
     );
 };
@@ -149,7 +155,9 @@ const styles = StyleSheet.create({
     },
     canvas:{
         width :  width,
-        height: height - 250
+        height: height - 250,
+       // paddingLeft: 12,
+       // paddingRight: 12
     },
     modal: {
         flex: 1,
@@ -158,6 +166,13 @@ const styles = StyleSheet.create({
         alignItems: "flex-start",
         justifyContent: "flex-start"
     },
+    swipeUp:{
+        backgroundColor: 'white',
+        borderWidth: 1,
+        borderColor: 'grey',
+        borderTopLeftRadius:20,
+        borderTopRightRadius:20,
+    }
 });
 
 export default ImagePlotting;

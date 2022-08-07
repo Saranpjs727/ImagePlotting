@@ -37,7 +37,7 @@ const List = ({books, navigation, onBookClick} : BookDetailsProps): JSX.Element 
                                     starStyle={styles.starStyle}
                                 />
                             </View>
-                            <Icon name="chevron-right" size={20} color="#373647"
+                            <Icon name="chevron-right" size={20} color="#808080"
                                onPress={() => {
                                    onBookClick(item.id);
                                    navigation.navigate('BookDetail', {})
