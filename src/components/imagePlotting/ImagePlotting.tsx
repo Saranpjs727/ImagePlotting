@@ -97,7 +97,9 @@ const ImagePlotting = ({item} : BookDetailProps): JSX.Element => {
     function location(canvas, ctx) {
         ctx.beginPath();
         ctx.strokeStyle = "#00FF00";
-        ctx.arc(item.pointerStartingCoordinate.x, item.pointerStartingCoordinate.y, 9, 0, Math.PI * 2, true);
+        ctx.fillStyle = "black";
+        ctx.fillText("You are here", item.pointerStartingCoordinate.x+15, item.pointerStartingCoordinate.y+5);
+        ctx.arc(item.pointerStartingCoordinate.x, item.pointerStartingCoordinate.y, 5, 0, Math.PI * 2, true);
         ctx.closePath();
         ctx.fillStyle = "#00FF00";
         ctx.fill();
