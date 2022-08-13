@@ -48,7 +48,7 @@ const BookDetail = ({item} : BookDetailProps): JSX.Element => {
             </View>
             <View style={styles.buttonContainer} >
                 <Pressable style={styles.button}  onPress={() => { // @ts-ignore
-                    navigation.navigate('QRScanner')}}>
+                    navigation.navigate('BookRoute')}}>
                     <Text style={styles.NavigateText}>Navigate</Text>
                 </Pressable>
             </View>

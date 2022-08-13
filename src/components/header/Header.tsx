@@ -33,9 +33,6 @@ const Header =():JSX.Element => {
                     <Stack.Screen name="BookDetail"  options={{ title: 'Favourites' }} >
                         {(props) => <BookDetail {...props} item = {searchedBook}/>}
                     </Stack.Screen>
-                    <Stack.Screen name="QRScanner"  options={{ title: 'QR Code Scanner' }}>
-                        {(props) => <ScanScreen {...props} item = {searchedBook}/>}
-                    </Stack.Screen>
                     <Stack.Screen name="BookRoute"  options={({ navigation }) => (
                              {   title: 'Book Path',
                                  headerLeft: (props) =>(
