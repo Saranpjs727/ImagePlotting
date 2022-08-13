@@ -71,6 +71,7 @@ const ImagePlotting = ({item} : BookDetailProps): JSX.Element => {
         ctx.lineTo(item.endCoordinate.x,item.endCoordinate.y);
         ctx.stroke();
     }
+    
 
     function drawbackground(canvas, context, onload){
         const imageUri = Image.resolveAssetSource(images[item.id]).uri
