@@ -1,5 +1,5 @@
 import * as React from "react";
-import {FlatList, Image, StyleSheet, View, Text, Alert} from "react-native"
+import {FlatList, Image, StyleSheet, View, Text} from "react-native"
 import StarRating from "react-native-star-rating";
 import Icon  from 'react-native-vector-icons/FontAwesome';
 import images from "../../local-data/assets/images"

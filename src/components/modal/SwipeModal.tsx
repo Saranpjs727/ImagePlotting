@@ -88,12 +88,6 @@ const SwipeModal = ({item, onClickTick, isMini}: ModalDetails): JSX.Element => {
                                         )
                                     })
                                 }
-                                {/*<View style={styles.buttonContainer} >*/}
-                                {/*    <Pressable style={styles.button}  onPress={() => { // @ts-ignore*/}
-                                {/*        navigation.navigate('BookRoute')}}>*/}
-                                {/*        <Text style={styles.ExitText}>Exit</Text>*/}
-                                {/*    </Pressable>*/}
-                                {/*</View>*/}
                             </View>
                         </>
                 }

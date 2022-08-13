@@ -14,30 +14,6 @@ const GlobalStyles = StyleSheet.create({
         borderWidth: 1,
         borderColor: "#808080"
     },
-    circle:{
-
-    },
-    oval:{
-},
-roundedTopLeft:{
-
-},
-roundedTopRight:{
-
-},
-roundedBottomLeft:{
-
-},
-roundedBottomRight:{
-
-},
-roundedTop:{
-
-},
-roundedBottom:{
-
-},
-
 });
 
 export default GlobalStyles;

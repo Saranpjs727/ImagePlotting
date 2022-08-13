@@ -3,7 +3,6 @@ import {useState} from "react";
 import {Dimensions, StyleSheet} from "react-native";
 import BookList from "../book/BookList";
 import BookDetail from "../book/BookDetail";
-import ScanScreen from "../qrCode/ScanScreen";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {NavigationContainer } from "@react-navigation/native";
 // @ts-ignore
@@ -15,7 +14,7 @@ import { HeaderBackButton } from '@react-navigation/elements';
 
 
 const Header =():JSX.Element => {
-    const [books, setBooks] = useState(bookData);
+    const [books,] = useState(bookData);
     const [searchedBook, setSearchedBook] = useState<any>([...books]);
     const Stack = createNativeStackNavigator();
 
