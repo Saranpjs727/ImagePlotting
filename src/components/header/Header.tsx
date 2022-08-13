@@ -42,7 +42,6 @@ const Header =():JSX.Element => {
                     <Stack.Screen name="BookView"  options={{ title: '' }}>
                         {(props) => <CarouselView {...props} item = {searchedBook}/>}
                     </Stack.Screen>
-                    {/*{headerLeft:() => navigation.popToTop()}*/}
                 </Stack.Navigator>
             </NavigationContainer>
         </>
