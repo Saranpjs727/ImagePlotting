@@ -15,7 +15,8 @@ import { HeaderBackButton } from '@react-navigation/elements';
 
 const Header =():JSX.Element => {
     const [books,] = useState(bookData);
-    const [searchedBook, setSearchedBook] = useState<any>([...books]);
+    //const [searchedBook, setSearchedBook] = useState<any>([...books]);
+    const [searchedBook, setSearchedBook] = useState<any>([...books][0]);
     const Stack = createNativeStackNavigator();
 
     const onBookClick = (searchId: any) => {
@@ -26,21 +27,12 @@ const Header =():JSX.Element => {
         <>
             <NavigationContainer>
                 <Stack.Navigator>
-                    <Stack.Screen name="Favourites" options={{ title: 'Favourites' }}>
-                        {(props) => <BookList {...props} books = {books} onBookClick = {onBookClick}/>}
-                    </Stack.Screen>
-                    <Stack.Screen name="BookDetail"  options={{ title: 'Favourites' }} >
-                        {(props) => <BookDetail {...props} item = {searchedBook}/>}
-                    </Stack.Screen>
                     <Stack.Screen name="BookRoute"  options={({ navigation }) => (
                              {   title: 'Book Path',
                                  headerLeft: (props) =>(
                             <HeaderBackButton {...props} onPress={() => navigation.popToTop()}/>
                         )})}>
                         {(props) => <ImagePlotting {...props} item = {searchedBook}/>}
-                    </Stack.Screen>
-                    <Stack.Screen name="BookView"  options={{ title: '' }}>
-                        {(props) => <CarouselView {...props} item = {searchedBook}/>}
                     </Stack.Screen>
                 </Stack.Navigator>
             </NavigationContainer>
