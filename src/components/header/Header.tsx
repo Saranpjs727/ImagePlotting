@@ -34,6 +34,9 @@ const Header =():JSX.Element => {
                         )})}>
                         {(props) => <ImagePlotting {...props} item = {searchedBook}/>}
                     </Stack.Screen>
+                    <Stack.Screen name="BookView"  options={{ title: '' }}>
+                        {(props) => <CarouselView {...props} item = {searchedBook}/>}
+                    </Stack.Screen>
                 </Stack.Navigator>
             </NavigationContainer>
         </>
