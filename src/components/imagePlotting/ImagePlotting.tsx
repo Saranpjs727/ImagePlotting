@@ -56,8 +56,8 @@ const ImagePlotting = ({item} : BookDetailProps): JSX.Element => {
             let ctx = canvas.getContext('2d');
             ctx.fillStyle = 'white';
             ctx.fillRect(0, 0, imageWidth, imageHeight);
-            ctx.strokeStyle = "#00316E";
-            ctx.lineWidth = 2;
+            ctx.strokeStyle = "#06038D";
+            ctx.lineWidth = 3;
             drawbackground(canvas, ctx, drawlines);
         }
     };
@@ -99,7 +99,7 @@ const ImagePlotting = ({item} : BookDetailProps): JSX.Element => {
         ctx.beginPath();
         ctx.strokeStyle = "#00FF00";
         ctx.fillStyle = "black";
-        ctx.fillText("You are here", item.pointerStartingCoordinate.x+15, item.pointerStartingCoordinate.y+5);
+        ctx.fillText("You are here", item.pointerStartingCoordinate.x+13, item.pointerStartingCoordinate.y+5);
         ctx.arc(item.pointerStartingCoordinate.x, item.pointerStartingCoordinate.y, 5, 0, Math.PI * 2, true);
         ctx.closePath();
         ctx.fillStyle = "#00FF00";
