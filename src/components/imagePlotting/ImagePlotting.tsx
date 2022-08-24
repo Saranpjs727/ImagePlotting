@@ -28,7 +28,7 @@ const ImagePlotting = ({item} : BookDetailProps): JSX.Element => {
 
     const[isNavigationClicked, setIsNavigationClicked] = useState(false);
     const imageWidth =  width;
-    const imageHeight = height - 250;
+    const imageHeight = height - 220;
     const navigation = useNavigation();
 
     useEffect(() =>{
@@ -56,8 +56,8 @@ const ImagePlotting = ({item} : BookDetailProps): JSX.Element => {
             let ctx = canvas.getContext('2d');
             ctx.fillStyle = 'white';
             ctx.fillRect(0, 0, imageWidth, imageHeight);
-            ctx.strokeStyle = "#00316E";
-            ctx.lineWidth = 2;
+            ctx.strokeStyle = "#06038D";
+            ctx.lineWidth = 3;
             drawbackground(canvas, ctx, drawlines);
         }
     };
@@ -71,6 +71,7 @@ const ImagePlotting = ({item} : BookDetailProps): JSX.Element => {
         ctx.lineTo(item.endCoordinate.x,item.endCoordinate.y);
         ctx.stroke();
     }
+
 
     function drawbackground(canvas, context, onload){
         const imageUri = Image.resolveAssetSource(images[item.id]).uri
@@ -97,7 +98,9 @@ const ImagePlotting = ({item} : BookDetailProps): JSX.Element => {
     function location(canvas, ctx) {
         ctx.beginPath();
         ctx.strokeStyle = "#00FF00";
-        ctx.arc(item.pointerStartingCoordinate.x, item.pointerStartingCoordinate.y, 9, 0, Math.PI * 2, true);
+        ctx.fillStyle = "black";
+        ctx.fillText("You are here", item.pointerStartingCoordinate.x+13, item.pointerStartingCoordinate.y+5);
+        ctx.arc(item.pointerStartingCoordinate.x, item.pointerStartingCoordinate.y, 5, 0, Math.PI * 2, true);
         ctx.closePath();
         ctx.fillStyle = "#00FF00";
         ctx.fill();
@@ -111,36 +114,36 @@ const ImagePlotting = ({item} : BookDetailProps): JSX.Element => {
     }
 
     return (
-            <View style={styles.container}>
-                <View style={styles.canvas}>
-                     <Canvas ref={handleCanvas} />
-                </View>
-                <SwipeUpDown
-                    itemMini={
-                        <SwipeModal
-                            item={item}
-                            onClickTick = {onClickTick}
-                            isMini = {true}
-                        />
-                    }
-                    itemFull={
-                        <SwipeModal
-                            item={item}
-                            onClickTick = {onClickTick}
-                            isMini = {false}
-                        />
-                    }
-                    onShowMini={() => console.log('mini')}
-                    onShowFull={() => console.log('full')}
-                    animation="spring"
-                    disableSwipeIcon = {false}
-                    extraMarginTop={120}
-                    iconColor='grey'
-                    iconSize={30}
-                    swipeHeight={170}
-                    style={styles.swipeUp}
-                />
+        <View style={styles.container}>
+            <View style={styles.canvas}>
+                <Canvas ref={handleCanvas} />
             </View>
+            <SwipeUpDown
+                itemMini={
+                    <SwipeModal
+                        item={item}
+                        onClickTick = {onClickTick}
+                        isMini = {true}
+                    />
+                }
+                itemFull={
+                    <SwipeModal
+                        item={item}
+                        onClickTick = {onClickTick}
+                        isMini = {false}
+                    />
+                }
+                onShowMini={() => console.log('mini')}
+                onShowFull={() => console.log('full')}
+                animation="spring"
+                disableSwipeIcon = {false}
+                extraMarginTop={120}
+                iconColor='grey'
+                iconSize={30}
+                swipeHeight={170}
+                style={styles.swipeUp}
+            />
+        </View>
     );
 };
 
@@ -156,8 +159,8 @@ const styles = StyleSheet.create({
     canvas:{
         width :  width,
         height: height - 250,
-       // paddingLeft: 12,
-       // paddingRight: 12
+        // paddingLeft: 12,
+        // paddingRight: 12
     },
     modal: {
         flex: 1,

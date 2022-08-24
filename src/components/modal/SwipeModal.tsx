@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Dimensions, Pressable, StyleSheet, Text, View} from 'react-native';
+import {Dimensions, StyleSheet, Text, View} from 'react-native';
 import Icon from "react-native-vector-icons/FontAwesome";
 import DashedLine from "react-native-dashed-line";
 
@@ -38,62 +38,52 @@ const SwipeModal = ({item, onClickTick, isMini}: ModalDetails): JSX.Element => {
                         </>
                         :
                         <>
-                            <Text style={styles.headingSteps}>{item.floorName} {item.floorr}</Text>
                             <View style={styles.navigationContainer}>
                                 {
                                     item.navigationSteps.map((steps, index) => {
                                         return (
-                                            <>
-                                                <View style={styles.navigationStepMain}>
-                                                    <View style={styles.navigationStep}>
-                                                        {
-                                                            index == 0 ?
-                                                                <Icon name="arrow-up" size={20} color="#373647"
-                                                                      style={styles.arrowIcon}/>
-                                                                :
-                                                                <View style={{
-                                                                    width: 20,
-                                                                    height: 20,
-                                                                    borderRadius: 20 / 2,
-                                                                    backgroundColor: 'yellow',
-                                                                    borderColor: 'white',
-                                                                    borderWidth: 1
-                                                                }}/>
-                                                        }
-                                                        <Text key={steps} numberOfLines={1}
-                                                              style={styles.navigationContent}>
-                                                            Go To {steps}
-                                                        </Text>
-                                                    </View>
+                                            <View style={styles.navigationStepMain} key={steps+"test"}>
+                                                <View style={styles.navigationStep} >
                                                     {
-                                                        index != (lengthOfSteps - 1) ?
-                                                            <>
-                                                                <View style={styles.navigationStepDash} key={steps}>
-                                                                    <DashedLine
-                                                                        axis="vertical"
-                                                                        dashLength={6}
-                                                                        dashThickness={2}
-                                                                        dashGap={2}
-                                                                        dashColor='#D3D3D3'
-                                                                        dashStyle={{borderRadius: 1}}
-                                                                    />
-                                                                    <Text key={steps + "1"}></Text>
-                                                                </View>
-                                                            </>
-                                                            : <></>
+                                                        index == 0 ?
+                                                            <Icon name="arrow-up" size={20} color="#373647"
+                                                                  style={styles.arrowIcon}/>
+                                                            :
+                                                            <View style={{
+                                                                width: 20,
+                                                                height: 20,
+                                                                borderRadius: 20 / 2,
+                                                                backgroundColor: 'yellow',
+                                                                borderColor: 'white',
+                                                                borderWidth: 1
+                                                            }}/>
                                                     }
+                                                    <Text numberOfLines={1}
+                                                          style={styles.navigationContent}>
+                                                        Go To {steps}
+                                                    </Text>
                                                 </View>
-                                            </>
-
+                                                {
+                                                    index != (lengthOfSteps - 1) ?
+                                                        <>
+                                                            <View style={styles.navigationStepDash}>
+                                                                <DashedLine
+                                                                    axis="vertical"
+                                                                    dashLength={6}
+                                                                    dashThickness={2}
+                                                                    dashGap={2}
+                                                                    dashColor='#D3D3D3'
+                                                                    dashStyle={{borderRadius: 1}}
+                                                                />
+                                                                <Text></Text>
+                                                            </View>
+                                                        </>
+                                                        : <></>
+                                                }
+                                            </View>
                                         )
                                     })
                                 }
-                                {/*<View style={styles.buttonContainer} >*/}
-                                {/*    <Pressable style={styles.button}  onPress={() => { // @ts-ignore*/}
-                                {/*        navigation.navigate('BookRoute')}}>*/}
-                                {/*        <Text style={styles.ExitText}>Exit</Text>*/}
-                                {/*    </Pressable>*/}
-                                {/*</View>*/}
                             </View>
                         </>
                 }
@@ -205,10 +195,9 @@ const styles = StyleSheet.create({
         backgroundColor: 'red',
         marginTop: 30,
     },
-    ExitText:{
+    ExitText: {
         color: 'white'
     }
 });
 
 export default SwipeModal;
-

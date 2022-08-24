@@ -2,44 +2,40 @@
   {
     "id": 1,
     "img": "../../local-data/image/book/Math.png",
-    "year": "2019",
-    "publisher": "Education",
+    "year": "1970",
+    "publisher": "George A Olah(George Andrew)",
     "rating": 4,
-    "name": "Advances in science",
-    "description":"A Transitional Reference provides A Transitional Reference providesA Transitional Reference provides a “crash course” in beginning pure mathematics, offering instruction on a blendof inductive and deductive reasoning offering instruction on a blendof inductive and deductive reasoning",
+    "name": "Carbonium ions/Vol.2, Methods of formation and major types.",
+    "description":"The book is about the center of the ion which has the carbon atom has a valency of 3 in a hybridized state of sp2. This means that three electrons of the carbon atoms occupy three orbitals that lie on the same plane. The positive center of the molecule is planar.",
     "floorr": "First Floor",
-    "zone" : "Blue Zone",
+    "zone" : "Yellow Zone (547.13722 OLA)",
     "qrcode" : "library",
-    "floorImage" : "../../local-data/image/library/floor1.jpeg",
-    "floorName" : "Davidwilson",
-    "locationName" : "Geological Survey",
+    "floorImage" : "../../local-data/image/library/libfloor.jpeg",
+    "floorName" : "David Wilson",
+    "locationName" : "Yellow Zone (547.13722 OLA)",
     "noOfLocatedImages" : ["1_01","1_02"],
-    "navigationSteps": ["First Floor","Geological Survey(Yellow Zone)","Geo/ SUR 551.0954","Shelf 523.2"],
+    "navigationSteps": ["First Floor","Yellow Zone (547.13722 OLA)","Shelf 547"],
     "pointerStartingCoordinate" : {
-      "x" : 100,
-      "y" : 45
+      "x" : 185,
+      "y" : 335
     },
     "startingCoordinate" : {
-      "x" : 100,
-      "y" : 60
+      "x" : 185,
+      "y" : 325
     },
     "pathCoordinates" : [
       {
-        "x" : 90,
-        "y" : 400
+        "x" : 310,
+        "y" : 325
       },
       {
-        "x" : 100,
-        "y" : 400
-      },
-      {
-        "x" : 100,
-        "y" : 530
+        "x" : 310,
+        "y" : 310
       }
     ],
     "endCoordinate" : {
-      "x" : 300,
-      "y" : 530
+      "x" : 310,
+      "y" : 310
     }
   },
   {
@@ -53,36 +49,32 @@
     "floorr": "Second Floor",
     "zone" : "Red Zone",
     "qrcode" : "library",
-    "floorImage" : "../../local-data/image/library/floor1.jpeg",
+    "floorImage" : "../../local-data/image/library/libfloor.jpeg",
     "floorName" : "Davidwilson",
     "locationName" : "Geological Survey",
-    "noOfLocatedImages" : ["1_01","1_02"],
+    "noOfLocatedImages" : ["2_01","2_02"],
     "navigationSteps": ["First Floor","Geological Survey(Yellow Zone)","Geo/ SUR 551.0954","Shelf 523.2"],
     "pointerStartingCoordinate" : {
-      "x" : 100,
-      "y" : 45
+      "x" : 185,
+      "y" : 335
     },
     "startingCoordinate" : {
-      "x" : 90,
-      "y" :60
+      "x" : 185,
+      "y" : 325
     },
     "pathCoordinates" : [
       {
-        "x" : 90,
-        "y" : 400
+        "x" : 184,
+        "y" : 135
       },
       {
-        "x" : 100,
-        "y" : 400
-      },
-      {
-        "x" : 100,
-        "y" : 530
+        "x" : 198,
+        "y" : 135
       }
     ],
     "endCoordinate" : {
-      "x" : 300,
-      "y" : 530
+      "x" : 198,
+      "y" : 135
     }
   },
   {
@@ -96,7 +88,7 @@
     "floorr": "Third Floor",
     "zone" : "Green Zone",
     "qrcode" : "library",
-    "floorImage" : "../../local-data/image/library/floor1.jpeg",
+    "floorImage" : "../../local-data/image/library/libfloor.jpeg",
     "floorName" : "Davidwilson",
     "locationName" : "Geological Survey",
     "noOfLocatedImages" : ["1_01","1_02"],

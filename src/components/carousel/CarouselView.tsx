@@ -71,9 +71,9 @@ const styles = StyleSheet.create({
         justifyContent: "flex-start"
     },
     image:{
-        height: height - 300,
+        height: height - 150,
         width: width,
-        resizeMode: 'cover',
+        resizeMode: 'stretch',
     }
 });
 
