@@ -41,19 +41,19 @@
   {
     "id": 2,
     "img": "../../local-data/image/book/Math.png",
-    "year": "2019",
-    "publisher": "Education",
-    "rating": 2,
-    "name": "Advances in Mathematics",
-    "description":"A Transitional Reference provides A Transitional Reference providesA Transitional Reference provides a “crash course” in beginning pure mathematics, offering instruction on a blendof inductive and deductive reasoning offering instruction on a blendof inductive and deductive reasoning",
-    "floorr": "Second Floor",
-    "zone" : "Red Zone",
+    "year": "1921",
+    "publisher": "Dewey, Henry",
+    "rating": 4,
+    "name": "The Geology of South London",
+    "description":"Memoirs of the Geological Survey of England and Wales. By Henry Dewey, and C. E. N. Bromehead, B.A. Sheet 270, South London. pp.vi + 92, 3 plates, and 1 text-figure. 1921. 3s. Map. Sheet 270, South London. Drift. Colour printed. 2s.",
+    "floorr": "First Floor",
+    "zone" : "Yellow Zone",
     "qrcode" : "library",
     "floorImage" : "../../local-data/image/library/libfloor.jpeg",
-    "floorName" : "Davidwilson",
-    "locationName" : "Geological Survey",
+    "floorName" : "David Wilson",
+    "locationName" : "Geological Survey(Yellow Zone)",
     "noOfLocatedImages" : ["2_01","2_02"],
-    "navigationSteps": ["First Floor","Geological Survey(Yellow Zone)","Geo/ SUR 551.0954","Shelf 523.2"],
+    "navigationSteps": ["First Floor","Geological Survey(Yellow Zone)","Geo/SUR 551.0954 - 555.694","Shelf 554.23"],
     "pointerStartingCoordinate" : {
       "x" : 185,
       "y" : 335
@@ -80,44 +80,48 @@
   {
     "id": 3,
     "img": "../../local-data/image/book/Math.png",
-    "year": "2019",
-    "publisher": "Education",
+    "year": "2011",
+    "publisher": "G.S. Maddala & Kajal Lahiri",
     "rating": 5,
-    "name": "Advances in Mathematics",
-    "description":"A Transitional Reference provides A Transitional Reference providesA Transitional Reference provides a “crash course” in beginning pure mathematics, offering instruction on a blendof inductive and deductive reasoning offering instruction on a blendof inductive and deductive reasoning",
-    "floorr": "Third Floor",
-    "zone" : "Green Zone",
+    "name": "Introduction to Econometrics,4th Edition",
+    "description":"Maintaining G.S. Maddala’s brilliant expository style of cutting through the technical superstructure to reveal only essential details, while retaining the nerve centre of the subject matter, Professor Kajal Lahiri has brought forward this new edition of one of the most important textbooks in its field.",
+    "floorr": "First Floor",
+    "zone" : "Blue Zone",
     "qrcode" : "library",
     "floorImage" : "../../local-data/image/library/libfloor.jpeg",
-    "floorName" : "Davidwilson",
-    "locationName" : "Geological Survey",
-    "noOfLocatedImages" : ["1_01","1_02"],
-    "navigationSteps": ["First Floor","Geological Survey(Yellow Zone)","Geo/ SUR 551.0954","Shelf 523.2"],
+    "floorName" : "David Wilson",
+    "locationName" : "Blue Zone",
+    "noOfLocatedImages" : ["3_01","3_02"],
+    "navigationSteps": ["First Floor","Blue Zone","330 - 330.104","Shelf 330.0151954"],
     "pointerStartingCoordinate" : {
-      "x" : 100,
-      "y" : 45
+      "x" : 185,
+      "y" : 335
     },
     "startingCoordinate" : {
-      "x" : 90,
-      "y" : 60
+      "x" : 185,
+      "y" : 345
     },
     "pathCoordinates" : [
       {
-        "x" : 90,
-        "y" : 400
+        "x" : 185,
+        "y" : 359
       },
       {
-        "x" : 100,
-        "y" : 400
+        "x" : 170,
+        "y" : 359
       },
       {
-        "x" : 100,
-        "y" : 530
+        "x" : 170,
+        "y" : 430
+      },
+      {
+        "x" : 182,
+        "y" : 430
       }
     ],
     "endCoordinate" : {
-      "x" : 300,
-      "y" : 530
+      "x" : 182,
+      "y" : 430
     }
   }
 ]

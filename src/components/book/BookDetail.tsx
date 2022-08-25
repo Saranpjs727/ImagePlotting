@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     bookImage: {
         height: 210,
         width: 140,
-        resizeMode: 'cover',
+        resizeMode: 'stretch',
     },
     bookName:{
         marginTop: 20,

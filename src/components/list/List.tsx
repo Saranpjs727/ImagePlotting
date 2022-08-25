@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     bookImage: {
         width: 70,
         height: 100,
-        resizeMode: 'cover'
+        resizeMode: 'stretch'
     },
     bookDetails: {
         paddingLeft: 20,

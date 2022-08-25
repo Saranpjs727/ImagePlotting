@@ -140,7 +140,7 @@ const ImagePlotting = ({item} : BookDetailProps): JSX.Element => {
                 extraMarginTop={120}
                 iconColor='grey'
                 iconSize={30}
-                swipeHeight={170}
+                swipeHeight={190}
                 style={styles.swipeUp}
             />
         </View>
