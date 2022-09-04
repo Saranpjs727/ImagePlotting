@@ -8,6 +8,7 @@ MERGED from /Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/A
 MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/saranya/.gradle/caches/transforms-3/0ae1dcc98161cd7687088e7c218bafb5/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:8:1-18:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] /Users/saranya/.gradle/caches/transforms-3/a87d4fe3abcfff9cf8121e97246e8460/transformed/jetified-flipper-network-plugin-0.125.0/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/saranya/.gradle/caches/transforms-3/c58f9bee4ce57c13fb82d93cd7fea6a8/transformed/jetified-flipper-fresco-plugin-0.125.0/AndroidManifest.xml:8:1-15:12
+MERGED from [com.facebook.fresco:animated-gif:2.5.0] /Users/saranya/.gradle/caches/transforms-3/1e84b52d5f605c125c0d30256105d78b/transformed/jetified-animated-gif-2.5.0/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_blur] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/@react-native-community/blur/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-camera] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:2:1-18:12
 MERGED from [:react-native-gesture-handler] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
@@ -25,7 +26,9 @@ MERGED from [com.facebook.fresco:flipper:2.6.0] /Users/saranya/.gradle/caches/tr
 MERGED from [com.facebook.fresco:stetho:2.6.0] /Users/saranya/.gradle/caches/transforms-3/7db6daeadb93d855132b7cdc6ff6b14a/transformed/jetified-stetho-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fresco:2.6.0] /Users/saranya/.gradle/caches/transforms-3/f5345d8520fd970784507fb90ed8f96a/transformed/jetified-fresco-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:soloader:2.6.0] /Users/saranya/.gradle/caches/transforms-3/f354ea1e25a0bef6dfaaf0949d37dce1/transformed/jetified-soloader-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:animated-base:2.5.0] /Users/saranya/.gradle/caches/transforms-3/cce82840477b2f4c2cbab8c23e77181c/transformed/jetified-animated-base-2.5.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /Users/saranya/.gradle/caches/transforms-3/8583b4f814030313aaec427a41028418/transformed/jetified-imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:animated-drawable:2.5.0] /Users/saranya/.gradle/caches/transforms-3/6a36ea4494f32c5834a78374e9ed50c3/transformed/jetified-animated-drawable-2.5.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:drawee:2.6.0] /Users/saranya/.gradle/caches/transforms-3/1cda616c2b5f7b4e3f4db0f3b47a4eb3/transformed/jetified-drawee-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:nativeimagefilters:2.6.0] /Users/saranya/.gradle/caches/transforms-3/5deb5ba3907be2bd74258c445e280794/transformed/jetified-nativeimagefilters-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:memory-type-native:2.6.0] /Users/saranya/.gradle/caches/transforms-3/ebcf767b82afef8fc3b7488d5b8a9aeb/transformed/jetified-memory-type-native-2.6.0/AndroidManifest.xml:2:1-9:12
@@ -39,6 +42,9 @@ MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] /Users/saranya/.gradl
 MERGED from [com.google.android.material:material:1.1.0] /Users/saranya/.gradle/caches/transforms-3/642b48cb1dfdf9b860a69904edafb68f/transformed/material-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/saranya/.gradle/caches/transforms-3/7ac0412ae9eaea2f5b46a407cb9674cb/transformed/appcompat-1.3.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/saranya/.gradle/caches/transforms-3/9e3cbed4866585d13f9be544ea68a12a/transformed/sqlite-framework-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/saranya/.gradle/caches/transforms-3/6145d2206d690cab702d8c851b92023a/transformed/jetified-middleware-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:ui-common:2.6.0] /Users/saranya/.gradle/caches/transforms-3/f28cff4f4ae139ba1ab4f8c168b1b1af/transformed/jetified-ui-common-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/saranya/.gradle/caches/transforms-3/936769f7c9becfbee1183a7c54056845/transformed/jetified-fbcore-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/saranya/.gradle/caches/transforms-3/8269528ca393b7201df857cca8662364/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/saranya/.gradle/caches/transforms-3/593f676eb1c43276ac74e3d0c9f57e70/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition:16.3.0] /Users/saranya/.gradle/caches/transforms-3/fdca2e8965f1834af669ed7cedf39463/transformed/jetified-play-services-mlkit-text-recognition-16.3.0/AndroidManifest.xml:2:1-18:12
@@ -47,8 +53,6 @@ MERGED from [com.google.mlkit:common:17.2.0] /Users/saranya/.gradle/caches/trans
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/saranya/.gradle/caches/transforms-3/255c014ea8a9ef13bec319b79553960e/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/saranya/.gradle/caches/transforms-3/fdff938c8e3e5c15c56538d86acbf303/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:15:1-41:12
 MERGED from [androidx.autofill:autofill:1.1.0] /Users/saranya/.gradle/caches/transforms-3/fadb6651b9c34e1bf1f22649e3a37779/transformed/jetified-autofill-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/saranya/.gradle/caches/transforms-3/6145d2206d690cab702d8c851b92023a/transformed/jetified-middleware-2.6.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:ui-common:2.6.0] /Users/saranya/.gradle/caches/transforms-3/f28cff4f4ae139ba1ab4f8c168b1b1af/transformed/jetified-ui-common-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/saranya/.gradle/caches/transforms-3/92ebce279d4132c476cc39e8b8bf1f04/transformed/jetified-appcompat-resources-1.3.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/saranya/.gradle/caches/transforms-3/b2a7938ed2181708c929b1d757b5dad1/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/saranya/.gradle/caches/transforms-3/fe674064534f06d4cfc58a9c7b553920/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -93,7 +97,6 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/saranya/.gradle/cache
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/saranya/.gradle/caches/transforms-3/e72dbad2e969053da7ba3a03495cd9f9/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/saranya/.gradle/caches/transforms-3/025cad7a70d968458776b6b6ce077b4a/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/saranya/.gradle/caches/transforms-3/ca5886f685b61597ebc3e7bcb875f488/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/saranya/.gradle/caches/transforms-3/936769f7c9becfbee1183a7c54056845/transformed/jetified-fbcore-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/saranya/.gradle/caches/transforms-3/e56020595a14dcbf4ad4d8176535dd47/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/saranya/.gradle/caches/transforms-3/aa2b71bb8c6d30d38347b2be8555c33b/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
 INJECTED from /Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/debug/AndroidManifest.xml:2:1-14:12
@@ -226,6 +229,8 @@ MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] /Users/saranya
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] /Users/saranya/.gradle/caches/transforms-3/a87d4fe3abcfff9cf8121e97246e8460/transformed/jetified-flipper-network-plugin-0.125.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/saranya/.gradle/caches/transforms-3/c58f9bee4ce57c13fb82d93cd7fea6a8/transformed/jetified-flipper-fresco-plugin-0.125.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/saranya/.gradle/caches/transforms-3/c58f9bee4ce57c13fb82d93cd7fea6a8/transformed/jetified-flipper-fresco-plugin-0.125.0/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.fresco:animated-gif:2.5.0] /Users/saranya/.gradle/caches/transforms-3/1e84b52d5f605c125c0d30256105d78b/transformed/jetified-animated-gif-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-gif:2.5.0] /Users/saranya/.gradle/caches/transforms-3/1e84b52d5f605c125c0d30256105d78b/transformed/jetified-animated-gif-2.5.0/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_blur] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/@react-native-community/blur/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_blur] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/@react-native-community/blur/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-camera] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
@@ -260,8 +265,12 @@ MERGED from [com.facebook.fresco:fresco:2.6.0] /Users/saranya/.gradle/caches/tra
 MERGED from [com.facebook.fresco:fresco:2.6.0] /Users/saranya/.gradle/caches/transforms-3/f5345d8520fd970784507fb90ed8f96a/transformed/jetified-fresco-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:soloader:2.6.0] /Users/saranya/.gradle/caches/transforms-3/f354ea1e25a0bef6dfaaf0949d37dce1/transformed/jetified-soloader-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:soloader:2.6.0] /Users/saranya/.gradle/caches/transforms-3/f354ea1e25a0bef6dfaaf0949d37dce1/transformed/jetified-soloader-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-base:2.5.0] /Users/saranya/.gradle/caches/transforms-3/cce82840477b2f4c2cbab8c23e77181c/transformed/jetified-animated-base-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-base:2.5.0] /Users/saranya/.gradle/caches/transforms-3/cce82840477b2f4c2cbab8c23e77181c/transformed/jetified-animated-base-2.5.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /Users/saranya/.gradle/caches/transforms-3/8583b4f814030313aaec427a41028418/transformed/jetified-imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /Users/saranya/.gradle/caches/transforms-3/8583b4f814030313aaec427a41028418/transformed/jetified-imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-drawable:2.5.0] /Users/saranya/.gradle/caches/transforms-3/6a36ea4494f32c5834a78374e9ed50c3/transformed/jetified-animated-drawable-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-drawable:2.5.0] /Users/saranya/.gradle/caches/transforms-3/6a36ea4494f32c5834a78374e9ed50c3/transformed/jetified-animated-drawable-2.5.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:drawee:2.6.0] /Users/saranya/.gradle/caches/transforms-3/1cda616c2b5f7b4e3f4db0f3b47a4eb3/transformed/jetified-drawee-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:drawee:2.6.0] /Users/saranya/.gradle/caches/transforms-3/1cda616c2b5f7b4e3f4db0f3b47a4eb3/transformed/jetified-drawee-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:nativeimagefilters:2.6.0] /Users/saranya/.gradle/caches/transforms-3/5deb5ba3907be2bd74258c445e280794/transformed/jetified-nativeimagefilters-2.6.0/AndroidManifest.xml:5:5-7:41
@@ -288,6 +297,12 @@ MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/saranya/.gradle/caches/t
 MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/saranya/.gradle/caches/transforms-3/7ac0412ae9eaea2f5b46a407cb9674cb/transformed/appcompat-1.3.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/saranya/.gradle/caches/transforms-3/9e3cbed4866585d13f9be544ea68a12a/transformed/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/saranya/.gradle/caches/transforms-3/9e3cbed4866585d13f9be544ea68a12a/transformed/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/saranya/.gradle/caches/transforms-3/6145d2206d690cab702d8c851b92023a/transformed/jetified-middleware-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/saranya/.gradle/caches/transforms-3/6145d2206d690cab702d8c851b92023a/transformed/jetified-middleware-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.6.0] /Users/saranya/.gradle/caches/transforms-3/f28cff4f4ae139ba1ab4f8c168b1b1af/transformed/jetified-ui-common-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.6.0] /Users/saranya/.gradle/caches/transforms-3/f28cff4f4ae139ba1ab4f8c168b1b1af/transformed/jetified-ui-common-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/saranya/.gradle/caches/transforms-3/936769f7c9becfbee1183a7c54056845/transformed/jetified-fbcore-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/saranya/.gradle/caches/transforms-3/936769f7c9becfbee1183a7c54056845/transformed/jetified-fbcore-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/saranya/.gradle/caches/transforms-3/8269528ca393b7201df857cca8662364/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:6:5-44
 MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/saranya/.gradle/caches/transforms-3/8269528ca393b7201df857cca8662364/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:6:5-44
 MERGED from [com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/saranya/.gradle/caches/transforms-3/593f676eb1c43276ac74e3d0c9f57e70/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:6:5-44
@@ -304,10 +319,6 @@ MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/sa
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/saranya/.gradle/caches/transforms-3/fdff938c8e3e5c15c56538d86acbf303/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:18:5-20:41
 MERGED from [androidx.autofill:autofill:1.1.0] /Users/saranya/.gradle/caches/transforms-3/fadb6651b9c34e1bf1f22649e3a37779/transformed/jetified-autofill-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.autofill:autofill:1.1.0] /Users/saranya/.gradle/caches/transforms-3/fadb6651b9c34e1bf1f22649e3a37779/transformed/jetified-autofill-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/saranya/.gradle/caches/transforms-3/6145d2206d690cab702d8c851b92023a/transformed/jetified-middleware-2.6.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/saranya/.gradle/caches/transforms-3/6145d2206d690cab702d8c851b92023a/transformed/jetified-middleware-2.6.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:ui-common:2.6.0] /Users/saranya/.gradle/caches/transforms-3/f28cff4f4ae139ba1ab4f8c168b1b1af/transformed/jetified-ui-common-2.6.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:ui-common:2.6.0] /Users/saranya/.gradle/caches/transforms-3/f28cff4f4ae139ba1ab4f8c168b1b1af/transformed/jetified-ui-common-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/saranya/.gradle/caches/transforms-3/92ebce279d4132c476cc39e8b8bf1f04/transformed/jetified-appcompat-resources-1.3.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/saranya/.gradle/caches/transforms-3/92ebce279d4132c476cc39e8b8bf1f04/transformed/jetified-appcompat-resources-1.3.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/saranya/.gradle/caches/transforms-3/b2a7938ed2181708c929b1d757b5dad1/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -396,8 +407,6 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/saranya/.gradle/caches/transforms-3/025cad7a70d968458776b6b6ce077b4a/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/saranya/.gradle/caches/transforms-3/ca5886f685b61597ebc3e7bcb875f488/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/saranya/.gradle/caches/transforms-3/ca5886f685b61597ebc3e7bcb875f488/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/saranya/.gradle/caches/transforms-3/936769f7c9becfbee1183a7c54056845/transformed/jetified-fbcore-2.6.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/saranya/.gradle/caches/transforms-3/936769f7c9becfbee1183a7c54056845/transformed/jetified-fbcore-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/saranya/.gradle/caches/transforms-3/e56020595a14dcbf4ad4d8176535dd47/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/saranya/.gradle/caches/transforms-3/e56020595a14dcbf4ad4d8176535dd47/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/saranya/.gradle/caches/transforms-3/aa2b71bb8c6d30d38347b2be8555c33b/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41

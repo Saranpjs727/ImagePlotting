@@ -1,48 +1,81 @@
 import * as React from "react";
-import {Dimensions, StyleSheet, Text, View} from 'react-native';
-import { useState } from 'react';
+import {useState} from "react";
+import {Dimensions, Image, Pressable, StyleSheet, Text, View} from 'react-native';
 import GlobalStyles from './GlobalStyles';
-import Icon from "react-native-vector-icons/FontAwesome";
+import images from "../../local-data/assets/images"
+import StarRating from "react-native-star-rating";
 
 interface ModalDetails {
     type: string,
     item: any,
-    onClickTick: any,
-    isImagePlottingPage: boolean,
-    activeIndex: any
+    onClickButton: any,
+    listIndex: any
 }
 
-const { width } = Dimensions.get('screen');
+const {width} = Dimensions.get('screen');
 
-const Modal = ({type, item, onClickTick, isImagePlottingPage, activeIndex}:ModalDetails): JSX.Element => {
+const Modal = ({
+                   type,
+                   item,
+                   onClickButton,
+                   listIndex
+               }: ModalDetails): JSX.Element => {
 
-    const [shapeClass,]=useState(type.split('-')[0])
-
+    const [shapeClass,] = useState(type.split('-')[0])
+    const navigationPath = item.navigationPath[listIndex]
     return (
         <>
-            <View style= {{...GlobalStyles.main,...GlobalStyles[shapeClass]}}>
-                <Text style={styles.heading}>{item.floorName} {item.floorr}</Text>
-                <View style={styles.modalContainer}>
-                    {isImagePlottingPage ?
-                        <><Text style={styles.details}>Have you reached {item.locationName}</Text>
-                        <View style={styles.options}>
-                            <View style={styles.closeIcon} >
-                                <Icon style={styles.close} name="close" size={25} color="red"
-                                      onPress={() => {
-                                      }}/>
+            {
+                listIndex === 2 ?
+                    <View style={{...GlobalStyles.mainFinal, ...GlobalStyles[shapeClass]}}>
+                        <View style={styles.bookDetailsMain}>
+                            <Image style={styles.bookImage} source={images[item.id]} testID="img1"/>
+                            <View style={styles.bookDetailsStyle}>
+                                <Text numberOfLines={1} style={styles.bookName}>{item.name}</Text>
+                                <Text numberOfLines={2} style={styles.bookDet}>{item.year} | {item.publisher}</Text>
+                                <View style={styles.rating}>
+                                    <StarRating
+                                        maxStars={1}
+                                        disabled={true}
+                                        rating={1}
+                                        fullStarColor={'#FFCF25'}
+                                        starSize={15}
+                                        containerStyle={styles.starStyleContainer}
+                                        starStyle={styles.starStyle}
+                                    />
+                                    <Text style={styles.ratingText}>{item.rating}</Text>
+                                </View>
                             </View>
-                            <View style={styles.checkIcon} >
-                                <Icon style={styles.check} name="check" size={25} color="green"
-                                      onPress={onClickTick}
-                                />
-                            </View>
-                        </View></>
-                        :
-                        (activeIndex == 0) ? <Text style={styles.details}>Go to the Aisle and Swipe Right</Text> :
-                            <Text style={styles.details}>Swipe Left</Text>
-                    }
-                </View>
-            </View>
+                        </View>
+                        <Text style={styles.reference}>*Refer this image to find the book.</Text>
+                        <Text
+                            style={styles.heading}>{navigationPath.heading} {navigationPath.heading === '' ? '' : ':'}</Text>
+                        <View style={styles.modalContainer}>
+                            <><Text style={styles.details}>{navigationPath.content}</Text>
+                                <View style={styles.options}>
+                                    <Pressable style={styles.buttonNo} onPress={onClickButton}>
+                                        <Text style={styles.buttonTextNo}>No</Text>
+                                    </Pressable>
+                                    <Pressable style={styles.button} onPress={onClickButton}>
+                                        <Text style={styles.buttonText}>Yes</Text>
+                                    </Pressable>
+                                </View></>
+                        </View>
+                    </View>
+                    :
+                    <View style={{...GlobalStyles.main, ...GlobalStyles[shapeClass]}}>
+                        <Text
+                            style={styles.heading}>{navigationPath.heading} {navigationPath.heading === '' ? '' : ':'}</Text>
+                        <View style={styles.modalContainer}>
+                            <><Text style={styles.details}>{navigationPath.content}</Text>
+                                <View style={styles.options}>
+                                    <Pressable style={styles.button} onPress={onClickButton}>
+                                        <Text style={styles.buttonText}>{navigationPath.buttonText}</Text>
+                                    </Pressable>
+                                </View></>
+                        </View>
+                    </View>
+            }
         </>
     );
 
@@ -50,16 +83,28 @@ const Modal = ({type, item, onClickTick, isImagePlottingPage, activeIndex}:Modal
 
 const styles = StyleSheet.create({
     heading: {
-        color: '#808080',
-        fontSize: 15,
-        lineHeight: 25,
-        paddingTop: 10,
-        paddingLeft: (width/2)/2
+        color: '#000000',
+        fontSize: 14,
+        lineHeight: 20,
+        fontWeight: '700',
+        paddingTop: 5,
+        paddingLeft: 10,
+        fontFamily: 'Inter',
+        fontStyle: 'normal'
     },
-    modalContainer:{
+    reference: {
+        color: '#000000',
+        fontSize: 13,
+        lineHeight: 20,
+        paddingTop: 5,
+        paddingLeft: 10,
+        fontFamily: 'Inter',
+        fontStyle: 'normal'
+    },
+    modalContainer: {
         flex: 2,
         flexDirection: "row",
-        paddingTop: 15,
+        //paddingTop: 5,
         paddingLeft: 10,
         width: width
     },
@@ -67,19 +112,23 @@ const styles = StyleSheet.create({
         alignContent: "flex-start",
         justifyContent: "flex-start",
         color: 'black',
-        fontSize: 15,
-        lineHeight: 25,
-        width: width-100
+        fontSize: 14,
+        lineHeight: 20,
+        width: 190,
+        fontWeight: '400',
+        fontFamily: 'Inter',
+        fontStyle: 'normal'
     },
-    options:{
+    options: {
         width: 100,
         flex: 2,
         display: "flex",
         flexDirection: "row",
-        alignContent: "flex-end",
-        position: "relative"
+        justifyContent: "flex-end",
+        position: "relative",
+        marginRight: 15
     },
-    checkIcon:{
+    checkIcon: {
         height: 29,
         width: 29,
         borderWidth: 1,
@@ -87,10 +136,10 @@ const styles = StyleSheet.create({
         borderRadius: 50,
         marginRight: "auto"
     },
-    check:{
+    check: {
         marginLeft: 0
     },
-    closeIcon:{
+    closeIcon: {
         marginRight: "auto",
         height: 29,
         width: 29,
@@ -98,8 +147,90 @@ const styles = StyleSheet.create({
         borderColor: 'grey',
         borderRadius: 50,
     },
-    close:{
+    close: {
         marginLeft: 3,
+    },
+    button: {
+        width: 64,
+        height: 29,
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingVertical: 12,
+        paddingHorizontal: 32,
+        borderRadius: 4,
+        borderWidth: 1,
+        borderColor: '#0B30E0',
+        backgroundColor: '#0B30E0',
+        marginLeft: 10
+    },
+    buttonText: {
+        position: 'absolute',
+        color: '#FBFBFB'
+    },
+    bookDetailsMain: {
+        alignItems: "center",
+        marginTop: 15,
+        marginLeft: 10,
+        display: "flex",
+        flexDirection: "row"
+    },
+    bookImage: {
+        height: 130,
+        width: 90,
+        resizeMode: 'stretch',
+    },
+    bookDetailsStyle: {
+        display: "flex",
+        flexDirection: "column",
+        width: width - 90,
+        marginLeft: 15,
+        alignItems: "flex-start",
+        justifyContent: "flex-start"
+    },
+    bookName: {
+        marginTop: 20,
+        fontWeight: 'bold',
+        fontSize: 15,
+        color: 'black'
+    },
+    bookDet: {
+        fontSize: 14,
+        marginTop: 7,
+        color: '#5A5A5A',
+        fontFamily: 'Inter',
+        fontStyle: 'normal'
+    },
+    rating: {
+        display: "flex",
+        flexDirection: "row",
+        marginTop: 10
+    },
+    ratingText: {
+        marginTop: 6.5,
+        fontSize: 15,
+        color: '#000000'
+    },
+    starStyleContainer: {
+        width: 20
+    },
+    starStyle: {
+        marginTop: 10
+    },
+    buttonNo: {
+        width: 64,
+        height: 29,
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingVertical: 12,
+        paddingHorizontal: 32,
+        borderRadius: 4,
+        borderWidth: 1,
+        borderColor: '#0B30E0',
+        backgroundColor: '#FFFFFF',
+    },
+    buttonTextNo: {
+        position: 'absolute',
+        color: '#0B30E0'
     }
 });
 

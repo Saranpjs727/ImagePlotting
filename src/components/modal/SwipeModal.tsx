@@ -1,17 +1,19 @@
 import * as React from "react";
-import {Dimensions, StyleSheet, Text, View} from 'react-native';
-import Icon from "react-native-vector-icons/FontAwesome";
+import {Dimensions, Pressable, StyleSheet, Text, View} from 'react-native';
 import DashedLine from "react-native-dashed-line";
+import Icon from "react-native-vector-icons/FontAwesome";
 
 interface ModalDetails {
     item: any,
     onClickTick: any,
-    isMini: boolean
+    isMini: boolean,
+    onClickNo: any,
+    onClickCross: any
 }
 
 const {width} = Dimensions.get('screen');
 
-const SwipeModal = ({item, onClickTick, isMini}: ModalDetails): JSX.Element => {
+const SwipeModal = ({item, onClickTick, isMini, onClickNo, onClickCross}: ModalDetails): JSX.Element => {
     const lengthOfSteps = item.navigationSteps.length;
     return (
         <>
@@ -19,48 +21,44 @@ const SwipeModal = ({item, onClickTick, isMini}: ModalDetails): JSX.Element => {
                 {
                     isMini ?
                         <>
-                            <Text style={styles.heading}>{item.floorName} {item.floorr}</Text>
                             <View style={styles.modalContainer}>
-                                <><Text style={styles.details}>Have you reached {item.locationName}</Text>
+                                <><Text style={styles.details}>Have you reached {item.locationName} ?</Text>
                                     <View style={styles.options}>
-                                        <View style={styles.closeIcon}>
-                                            <Icon style={styles.close} name="close" size={25} color="red"
-                                                  onPress={() => {
-                                                  }}/>
-                                        </View>
-                                        <View style={styles.checkIcon}>
-                                            <Icon style={styles.check} name="check" size={25} color="green"
-                                                  onPress={onClickTick}
-                                            />
-                                        </View>
-                                    </View></>
+                                        <Pressable style={styles.buttonYes} onPress={onClickTick}>
+                                            <Text style={styles.yesText}>Yes</Text>
+                                        </Pressable>
+                                        <Pressable style={styles.buttonNo} onPress={onClickNo}>
+                                            <Text style={styles.noText}>No</Text>
+                                        </Pressable>
+                                    </View>
+                                </>
                             </View>
                         </>
                         :
                         <>
+                            <View style={styles.navDet}>
+                                <Text style={styles.navigationInfo}>Navigation Info </Text>
+                                <Icon style={styles.cross} name="times-circle-o" size={20} color="#373647"
+                                      onPress={onClickCross}/>
+                            </View>
                             <View style={styles.navigationContainer}>
                                 {
                                     item.navigationSteps.map((steps, index) => {
                                         return (
-                                            <View style={styles.navigationStepMain} key={steps+"test"}>
-                                                <View style={styles.navigationStep} >
-                                                    {
-                                                        index == 0 ?
-                                                            <Icon name="arrow-up" size={20} color="#373647"
-                                                                  style={styles.arrowIcon}/>
-                                                            :
-                                                            <View style={{
-                                                                width: 20,
-                                                                height: 20,
-                                                                borderRadius: 20 / 2,
-                                                                backgroundColor: 'yellow',
-                                                                borderColor: 'white',
-                                                                borderWidth: 1
-                                                            }}/>
-                                                    }
+                                            <View style={styles.navigationStepMain} key={steps + "test"}>
+                                                <View style={styles.navigationStep}>
+                                                    <View style={{
+                                                        width: 10,
+                                                        height: 10,
+                                                        borderRadius: 10 / 2,
+                                                        backgroundColor: '#FFFFFF',
+                                                        borderColor: '#0B30E0',
+                                                        borderWidth: 2,
+                                                        top: 3
+                                                    }}/>
                                                     <Text numberOfLines={1}
                                                           style={styles.navigationContent}>
-                                                        Go To {steps}
+                                                        {steps}
                                                     </Text>
                                                 </View>
                                                 {
@@ -72,7 +70,7 @@ const SwipeModal = ({item, onClickTick, isMini}: ModalDetails): JSX.Element => {
                                                                     dashLength={6}
                                                                     dashThickness={2}
                                                                     dashGap={2}
-                                                                    dashColor='#D3D3D3'
+                                                                    dashColor='#0B30E0'
                                                                     dashStyle={{borderRadius: 1}}
                                                                 />
                                                                 <Text></Text>
@@ -84,6 +82,18 @@ const SwipeModal = ({item, onClickTick, isMini}: ModalDetails): JSX.Element => {
                                         )
                                     })
                                 }
+                                <View style={styles.modalContainer2}>
+                                    <><Text style={styles.details}>Have you reached {item.locationName} ?</Text>
+                                        <View style={styles.options}>
+                                            <Pressable style={styles.buttonYes} onPress={onClickTick}>
+                                                <Text style={styles.yesText}>Yes</Text>
+                                            </Pressable>
+                                            <Pressable style={styles.buttonNo} onPress={() => null}>
+                                                <Text style={styles.noText}>No</Text>
+                                            </Pressable>
+                                        </View>
+                                    </>
+                                </View>
                             </View>
                         </>
                 }
@@ -96,7 +106,7 @@ const SwipeModal = ({item, onClickTick, isMini}: ModalDetails): JSX.Element => {
 const styles = StyleSheet.create({
     main: {
         backgroundColor: 'white',
-        height: 200,
+        height: 180,
         width: width,
     },
     heading: {
@@ -113,42 +123,55 @@ const styles = StyleSheet.create({
         paddingTop: 20
     },
     modalContainer: {
-        flex: 2,
-        flexDirection: "row",
+        flexDirection: "column",
+        alignItems: "center",
+        paddingLeft: 10,
+        width: width,
+    },
+    modalContainer2: {
+        flexDirection: "column",
+        alignItems: "center",
         paddingTop: 15,
         paddingLeft: 10,
-        width: width
+        width: width,
+        marginTop: 10
     },
     navigationStepMain: {
         flexDirection: "column",
     },
     navigationStep: {
         flexDirection: "row",
-        paddingLeft: 40
+        paddingLeft: 20,
     },
     navigationContainer: {
         display: "flex",
         flexDirection: "column",
-        paddingTop: 40
+        paddingTop: 30
     },
     navigationContent: {
-        color: '#808080',
-        fontSize: 15,
-        lineHeight: 25,
-        paddingLeft: 20
+        color: '#000000',
+        fontFamily: 'Inter',
+        fontStyle: "normal",
+        fontWeight: '400',
+        fontSize: 12,
+        paddingLeft: 15
     },
     navigationStepDash: {
         flexDirection: "row",
-        paddingLeft: 50,
-        height: 50
+        paddingLeft: 24,
+        height: 25
     },
     details: {
-        alignContent: "flex-start",
-        justifyContent: "flex-start",
+        alignContent: "center",
+        justifyContent: "center",
         color: 'black',
-        fontSize: 15,
-        lineHeight: 25,
-        width: width - 100
+        fontSize: 14,
+        lineHeight: 17,
+        fontFamily: 'Inter',
+        fontStyle: "normal",
+        fontWeight: '400',
+        marginTop: 20,
+        //width: width - 100
     },
     options: {
         width: 100,
@@ -156,7 +179,8 @@ const styles = StyleSheet.create({
         display: "flex",
         flexDirection: "row",
         alignContent: "flex-end",
-        position: "relative"
+        position: "relative",
+        marginTop: 10
     },
     checkIcon: {
         height: 29,
@@ -197,6 +221,60 @@ const styles = StyleSheet.create({
     },
     ExitText: {
         color: 'white'
+    },
+    buttonYes: {
+        width: 64,
+        height: 29,
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingVertical: 12,
+        paddingHorizontal: 32,
+        borderRadius: 4,
+        borderWidth: 1,
+        borderColor: '#0B30E0',
+        backgroundColor: '#0B30E0',
+        marginTop: 5,
+    },
+    yesText: {
+        position: 'absolute',
+        color: '#FBFBFB'
+    },
+    buttonNo: {
+        width: 64,
+        height: 29,
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingVertical: 12,
+        paddingHorizontal: 32,
+        borderRadius: 4,
+        borderWidth: 1,
+        borderColor: '#0B30E0',
+        backgroundColor: '#FFFFFF',
+        marginTop: 5,
+        marginLeft: 10
+    },
+    noText: {
+        position: 'absolute',
+        color: '#0B30E0'
+    },
+    navigationInfo: {
+        width: width - 120,
+        height: 17,
+        left: 20,
+        top: 20,
+        fontFamily: 'Inter',
+        fontStyle: "normal",
+        fontWeight: '700',
+        fontSize: 14,
+        lineHeight: 17,
+        color: 'black'
+    },
+    navDet: {
+        display: 'flex',
+        flexDirection: 'column'
+    },
+    cross: {
+        marginLeft: 320
     }
 });
 

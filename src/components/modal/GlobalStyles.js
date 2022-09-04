@@ -1,42 +1,39 @@
 import {Dimensions, StyleSheet} from 'react-native';
-const { width } = Dimensions.get('screen');
+
+const {width} = Dimensions.get('screen');
 
 const GlobalStyles = StyleSheet.create({
-    main:{
+    main: {
         //backgroundColor:'#D3D3D3',
-        backgroundColor:'white',
+        backgroundColor: 'white',
         height: 200,
         width: width,
     },
-    rounded:{
-        borderTopLeftRadius:20,
-        borderTopRightRadius:20,
+    mainFinal: {
+        backgroundColor: 'white',
+        height: 250,
+        width: width,
+    },
+    rounded: {
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
         borderWidth: 1,
         borderColor: "#808080"
     },
-    circle:{
-
+    default: {
+        borderTopLeftRadius: 1,
+        borderTopRightRadius: 1,
+        borderWidth: 1,
+        borderColor: "#808080"
     },
-    oval:{
-},
-roundedTopLeft:{
-
-},
-roundedTopRight:{
-
-},
-roundedBottomLeft:{
-
-},
-roundedBottomRight:{
-
-},
-roundedTop:{
-
-},
-roundedBottom:{
-
-},
+    circle: {},
+    oval: {},
+    roundedTopLeft: {},
+    roundedTopRight: {},
+    roundedBottomLeft: {},
+    roundedBottomRight: {},
+    roundedTop: {},
+    roundedBottom: {},
 
 });
 

@@ -3,18 +3,21 @@ import {useState} from "react";
 import {Dimensions, StyleSheet} from "react-native";
 import BookList from "../book/BookList";
 import BookDetail from "../book/BookDetail";
-import ScanScreen from "../qrCode/ScanScreen";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import {NavigationContainer } from "@react-navigation/native";
+import {NavigationContainer} from "@react-navigation/native";
 // @ts-ignore
 import bookData from "../../local-data/book.json";
 import ImagePlotting from "../imagePlotting/ImagePlotting";
-import CarouselView from "../carousel/CarouselView";
-const { width } = Dimensions.get('screen');
-import { HeaderBackButton } from '@react-navigation/elements';
+import {HeaderBackButton} from '@react-navigation/elements';
+import NavigationFirst from "../navigation/NavigationFirst";
+import NavigationThird from "../navigation/NavigationThird";
+import NavigationSecond from "../navigation/NavigationSecond";
+import Feedback from "../feedback/Feedback";
+
+const {width} = Dimensions.get('screen');
 
 
-const Header =():JSX.Element => {
+const Header = (): JSX.Element => {
     const [books, setBooks] = useState(bookData);
     const [searchedBook, setSearchedBook] = useState<any>([...books]);
     const Stack = createNativeStackNavigator();
@@ -23,27 +26,63 @@ const Header =():JSX.Element => {
         setSearchedBook(books.filter((book) => book.id == searchId)[0]);
     }
 
-    return  (
+    return (
         <>
             <NavigationContainer>
-                <Stack.Navigator>
-                    <Stack.Screen name="Favourites" options={{ title: 'Favourites' }}>
-                        {(props) => <BookList {...props} books = {books} onBookClick = {onBookClick}/>}
+                <Stack.Navigator /*screenOptions={{headerTitleAlign: 'center'}}*/>
+                    <Stack.Screen name="Favourites" options={{
+                        title: 'Favourites',
+                        headerStyle: {backgroundColor: 'white'},
+                        headerShadowVisible: false
+                    }}>
+                        {(props) => <BookList {...props} books={books} onBookClick={onBookClick}/>}
                     </Stack.Screen>
-                    <Stack.Screen name="BookDetail"  options={{ title: 'Favourites' }} >
-                        {(props) => <BookDetail {...props} item = {searchedBook}/>}
+                    <Stack.Screen name="BookDetail" options={{
+                        title: 'Favourites',
+                        headerStyle: {backgroundColor: 'white'},
+                        headerShadowVisible: false
+                    }}>
+                        {(props) => <BookDetail {...props} item={searchedBook}/>}
                     </Stack.Screen>
-                    <Stack.Screen name="BookRoute"  options={({ navigation }) => (
-                             {   title: 'Book Path',
-                                 headerLeft: (props) =>(
-                            <HeaderBackButton {...props} onPress={() => navigation.popToTop()}/>
-                        )})}>
-                        {(props) => <ImagePlotting {...props} item = {searchedBook}/>}
+                    <Stack.Screen name="BookRoute" options={({navigation}) => (
+                        {
+                            title: searchedBook.floorr,
+                            headerStyle: {backgroundColor: 'white'},
+                            headerShadowVisible: false,
+                            headerLeft: (props) => (
+                                <HeaderBackButton {...props} onPress={() => navigation.popToTop()}/>
+                            )
+                        })}>
+                        {(props) => <ImagePlotting {...props} item={searchedBook}/>}
                     </Stack.Screen>
-                    <Stack.Screen name="BookView"  options={{ title: '' }}>
-                        {(props) => <CarouselView {...props} item = {searchedBook}/>}
+                    <Stack.Screen name="NavigationFirst" options={{
+                        title: '',
+                        headerStyle: {backgroundColor: 'white'},
+                        headerShadowVisible: false
+                    }}>
+                        {(props) => <NavigationFirst {...props} item={searchedBook}/>}
                     </Stack.Screen>
-                    {/*{headerLeft:() => navigation.popToTop()}*/}
+                    <Stack.Screen name="NavigationSecond" options={{
+                        title: '',
+                        headerStyle: {backgroundColor: 'white'},
+                        headerShadowVisible: false
+                    }}>
+                        {(props) => <NavigationSecond {...props} item={searchedBook}/>}
+                    </Stack.Screen>
+                    <Stack.Screen name="NavigationThird" options={{
+                        title: '',
+                        headerStyle: {backgroundColor: 'white'},
+                        headerShadowVisible: false
+                    }}>
+                        {(props) => <NavigationThird {...props} item={searchedBook}/>}
+                    </Stack.Screen>
+                    <Stack.Screen name="Feedback" options={{
+                        title: '',
+                        headerStyle: {backgroundColor: 'white'},
+                        headerShadowVisible: false
+                    }}>
+                        {(props) => <Feedback {...props} item={searchedBook}/>}
+                    </Stack.Screen>
                 </Stack.Navigator>
             </NavigationContainer>
         </>
@@ -55,11 +94,11 @@ const styles = StyleSheet.create({
         display: "flex",
         flexDirection: "row",
         width: width,
-        paddingLeft:20,
-        paddingTop:20,
+        paddingLeft: 20,
+        paddingTop: 20,
     },
     arrow: {
-       paddingLeft: width-140,
+        paddingLeft: width - 140,
         paddingTop: 2
     },
     heading: {

@@ -1,16 +1,17 @@
 import * as React from "react";
-import {Dimensions, StyleSheet, Text, View} from "react-native";
+import {Dimensions, StyleSheet, View} from "react-native";
 import Search from "../search/Search";
 import List from "../list/List";
-import { useNavigation } from '@react-navigation/native';
-const { width, height } = Dimensions.get('screen');
+import {useNavigation} from '@react-navigation/native';
+
+const {width, height} = Dimensions.get('screen');
 
 interface BookPageProps {
-    books : any;
-    onBookClick: (id:bigint) => void
+    books: any;
+    onBookClick: (id: bigint) => void
 }
 
-const BookList = ({books, onBookClick} : BookPageProps ): JSX.Element => {
+const BookList = ({books, onBookClick}: BookPageProps): JSX.Element => {
     const navigation = useNavigation();
 
     const [searchQuery, setSearchQuery] = React.useState('');
@@ -19,7 +20,7 @@ const BookList = ({books, onBookClick} : BookPageProps ): JSX.Element => {
     const onChangeSearch = (query: any) => {
         setIsBookSearched(true);
         setSearchQuery(query);
-    } ;
+    };
 
     const filteredBook = !isBookSearched
         ? books
@@ -35,14 +36,14 @@ const BookList = ({books, onBookClick} : BookPageProps ): JSX.Element => {
             <View style={styles.container}>
                 <View style={styles.searchBar}>
                     <Search
-                        searchQuery = {searchQuery}
-                        onChangeSearch = {onChangeSearch}/>
+                        searchQuery={searchQuery}
+                        onChangeSearch={onChangeSearch}/>
                 </View>
                 <View style={styles.list}>
                     <List
-                        books ={filteredBook}
-                        navigation={ navigation}
-                        onBookClick = {onBookClick}
+                        books={filteredBook}
+                        navigation={navigation}
+                        onBookClick={onBookClick}
                     />
                 </View>
             </View>
@@ -52,21 +53,22 @@ const BookList = ({books, onBookClick} : BookPageProps ): JSX.Element => {
 
 const styles = StyleSheet.create({
     container: {
-        height: height-80,
+        height: height - 80,
         width: width,
         position: "relative",
         flex: 2,
-        display:"flex",
-        flexDirection:"column",
-        elevation: 1
+        display: "flex",
+        flexDirection: "column",
+        elevation: 1,
+        backgroundColor: "white"
     },
     searchBar: {
         paddingLeft: 20,
-        paddingRight:20,
-        marginTop: 22
+        paddingRight: 20,
+        marginTop: 15
     },
     list: {
-        marginTop: 35,
+        marginTop: 40,
         marginBottom: 20,
         height: 550,
     }

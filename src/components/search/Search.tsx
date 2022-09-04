@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Searchbar } from 'react-native-paper';
-import {StyleSheet} from "react-native";
+import {StyleSheet, Text} from "react-native";
 
 interface SearchProps {
     searchQuery : string
@@ -12,11 +12,11 @@ const Search = ({searchQuery, onChangeSearch}:SearchProps): JSX.Element => {
     return (
         <>
             <Searchbar
-                placeholder="Search"
+                placeholder= "Search your fav book"
                 onChangeText={onChangeSearch}
                 value={searchQuery}
                 style={styles.searchBar}
-                iconColor = {"black"}
+                iconColor = {"#9D9D9D"}
                 keyboardType = "default"
             />
         </>
@@ -26,9 +26,14 @@ const Search = ({searchQuery, onChangeSearch}:SearchProps): JSX.Element => {
 
 const styles = StyleSheet.create({
     searchBar: {
-        borderRadius: 30,
         borderColor: "black",
-        height:45
+        height:45,
+        fontFamily: "Inter",
+        fontStyle: "normal",
+        fontSize:3,
+        lineHeight: 15,
+        color: "#9D9D9D",
+        backgroundColor: "#FBFBFB"
     }
 });
 
