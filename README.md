@@ -37,3 +37,8 @@ To build the application from terminal, run ```yarn react-native run-android```
 To run the application in metro from terminal, run ```yarn react-native start```
 
 To reload the app press ``` r```
+
+
+## Get APK in below path
+
+``` android -> app -> build -> outputs -> apk -> debug -> app-debug.apk ```
