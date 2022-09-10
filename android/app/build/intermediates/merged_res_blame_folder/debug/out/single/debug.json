@@ -1,19 +1,99 @@
 [
     {
-        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_node_modules_reactnativepaper_src_assets_backchevron.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/node_modules_reactnativepaper_src_assets_backchevron.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_image_book_book3.jpeg.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_image_book_book3.jpeg"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-xhdpi_node_modules_reactnativeswipeupdown_src_assets_images_minus.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-xhdpi/node_modules_reactnativeswipeupdown_src_assets_images_minus.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_tick.gif.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_tick.gif"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-xxhdpi_node_modules_reactnativeswipeupdown_src_assets_images_arrowdown.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-xxhdpi/node_modules_reactnativeswipeupdown_src_assets_images_arrowdown.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_location.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_location.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_circle.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_circle.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable_rn_edit_text_material.xml.flat",
         "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable/rn_edit_text_material.xml"
     },
     {
-        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_marknotavailable.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_marknotavailable.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-xhdpi_node_modules_reactnativeswipeupdown_src_assets_images_arrowdown.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-xhdpi/node_modules_reactnativeswipeupdown_src_assets_images_arrowdown.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_image_imagelocations_book1_book1_2.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_image_imagelocations_book1_book1_2.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_image_book_book1.jpeg.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_image_book_book1.jpeg"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_image_book_science.jpeg.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_image_book_science.jpeg"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_image_book_science1.jpeg.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_image_book_science1.jpeg"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_image_imagelocation_booklocation7.jpeg.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_image_imagelocation_booklocation7.jpeg"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-xxhdpi_node_modules_reactnativeswipeupdown_src_assets_images_minus.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-xxhdpi/node_modules_reactnativeswipeupdown_src_assets_images_minus.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_image_imagelocation_booklocation3.jpeg.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_image_imagelocation_booklocation3.jpeg"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_image_library_libfloor.jpeg.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_image_library_libfloor.jpeg"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backiconmask.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backiconmask.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_node_modules_reactnativeswipeupdown_src_assets_images_arrowdown.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/node_modules_reactnativeswipeupdown_src_assets_images_arrowdown.png"
     },
     {
         "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat",
@@ -24,23 +104,79 @@
         "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-hdpi_node_modules_reactnativeswipeupdown_src_assets_images_minus.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-hdpi/node_modules_reactnativeswipeupdown_src_assets_images_minus.png"
     },
     {
-        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_image_imagelocation_booklocation6.jpeg.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_image_imagelocation_booklocation6.jpeg"
     },
     {
-        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_info.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_info.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-xxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-xxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_image_imagelocations_book1_book1_1.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_image_imagelocations_book1_book1_1.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-hdpi_node_modules_reactnativeswipeupdown_src_assets_images_arrowdown.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-hdpi/node_modules_reactnativeswipeupdown_src_assets_images_arrowdown.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-xhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-xhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_node_modules_reactnativeswipeupdown_src_assets_images_minus.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/node_modules_reactnativeswipeupdown_src_assets_images_minus.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-xxxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_image_book_book2.jpeg.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_image_book_book2.jpeg"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_mark.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_mark.png"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_image_imagelocation_booklocation1.jpeg.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_image_imagelocation_booklocation1.jpeg"
+    },
+    {
+        "merged": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_localdata_image_imagelocations_book1_book1_3.png.flat",
+        "source": "/Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/res/drawable-mdpi/src_localdata_image_imagelocations_book1_book1_3.png"
     }
 ]

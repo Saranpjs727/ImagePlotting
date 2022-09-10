@@ -41,4 +41,12 @@ To reload the app press ``` r```
 
 ## Get APK in below path
 
-``` android -> app -> build -> outputs -> apk -> debug -> app-debug.apk ```
+Step 1 : ``` npx mkdirp android/app/src/main/assets/ ```
+
+Step 2: ```react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/ ```
+
+Step 3: ```cd android/
+./gradlew assembleDebug ```
+
+Step 4: ``` android/app/build/outputs/apk/ ```
+
