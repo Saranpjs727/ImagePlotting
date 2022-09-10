@@ -80,9 +80,9 @@ const Header = (): JSX.Element => {
                         title: '',
                         headerStyle: {backgroundColor: 'white'},
                         headerShadowVisible: false
-                    }}>
-                        {(props) => <Feedback {...props} item={searchedBook}/>}
-                    </Stack.Screen>
+                    }} component = {Feedback}/>
+                    {/*    {(props) => <Feedback {...props} item={searchedBook}/>}*/}
+                    {/*</Stack.Screen>*/}
                 </Stack.Navigator>
             </NavigationContainer>
         </>

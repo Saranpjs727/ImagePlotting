@@ -13,6 +13,8 @@ import java.util.ArrayList;
 
 // @react-native-community/blur
 import com.reactnativecommunity.blurview.BlurViewPackage;
+// @react-native-community/datetimepicker
+import com.reactcommunity.rndatetimepicker.RNDateTimePickerPackage;
 // react-native-camera
 import org.reactnative.camera.RNCameraPackage;
 // react-native-gesture-handler
@@ -73,6 +75,7 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
       new BlurViewPackage(),
+      new RNDateTimePickerPackage(),
       new RNCameraPackage(),
       new RNGestureHandlerPackage(),
       new RNPermissionsPackage(),

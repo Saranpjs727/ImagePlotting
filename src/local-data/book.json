@@ -12,6 +12,7 @@
     "qrcode": "library",
     "floorImage": "../../local-data/image/library/libfloor.jpeg",
     "floorName": "David Wilson",
+    "loanedTill": "",
     "locationName": "Yellow Zone (547.13722 OLA)",
     "noOfLocatedImages": [
       "1_01",
@@ -84,6 +85,7 @@
     "floorImage": "../../local-data/image/library/libfloor.jpeg",
     "floorName": "David Wilson",
     "locationName": "Geological Survey(Yellow Zone)",
+    "loanedTill": "",
     "noOfLocatedImages": [
       "2_01",
       "2_02"
@@ -155,6 +157,7 @@
     "floorImage": "../../local-data/image/library/libfloor.jpeg",
     "floorName": "David Wilson",
     "locationName": "Blue Zone",
+    "loanedTill": "",
     "noOfLocatedImages": [
       "3_01",
       "3_02"
@@ -162,7 +165,6 @@
     "navigationSteps": [
       "You are here",
       "First Floor",
-      "Blue Zone",
       "330 - 330.104",
       "Shelf 330.0151954"
     ],
@@ -235,6 +237,7 @@
     "floorImage": "../../local-data/image/library/libfloor.jpeg",
     "floorName": "David Wilson",
     "locationName": "Geological Survey(Yellow Zone)",
+    "loanedTill": "20.08.2022",
     "noOfLocatedImages": [
       "2_01",
       "2_02"

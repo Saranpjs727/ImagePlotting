@@ -18,7 +18,7 @@ const NavigationFirst = ({item}: NavigationProps): JSX.Element => {
     const navigation = useNavigation();
 
     const onClickButton = () => {
-        navigation.navigate('Feedback', {})
+        navigation.navigate('Feedback', {isReserved : false})
     }
 
     return (

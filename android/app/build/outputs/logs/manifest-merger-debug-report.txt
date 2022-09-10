@@ -10,6 +10,7 @@ MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] /Users/saranya
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/saranya/.gradle/caches/transforms-3/c58f9bee4ce57c13fb82d93cd7fea6a8/transformed/jetified-flipper-fresco-plugin-0.125.0/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.fresco:animated-gif:2.5.0] /Users/saranya/.gradle/caches/transforms-3/1e84b52d5f605c125c0d30256105d78b/transformed/jetified-animated-gif-2.5.0/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_blur] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/@react-native-community/blur/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_datetimepicker] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-camera] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:2:1-18:12
 MERGED from [:react-native-gesture-handler] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-permissions] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-permissions/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
@@ -131,6 +132,8 @@ application
 ADDED from /Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:6:5-26:19
 MERGED from /Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:6:5-26:19
 MERGED from /Users/saranya/Documents/GitHub/ImagePlotting/android/app/src/main/AndroidManifest.xml:6:5-26:19
+MERGED from [:react-native-community_datetimepicker] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-20
+MERGED from [:react-native-community_datetimepicker] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-20
 MERGED from [:react-native-webview] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-19:19
 MERGED from [:react-native-webview] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-19:19
 MERGED from [com.facebook.react:react-native:0.68.0] /Users/saranya/.gradle/caches/transforms-3/8af0314cca28edbd3fe04d3ba5b65ce2/transformed/jetified-react-native-0.68.0/AndroidManifest.xml:9:5-20
@@ -233,6 +236,8 @@ MERGED from [com.facebook.fresco:animated-gif:2.5.0] /Users/saranya/.gradle/cach
 MERGED from [com.facebook.fresco:animated-gif:2.5.0] /Users/saranya/.gradle/caches/transforms-3/1e84b52d5f605c125c0d30256105d78b/transformed/jetified-animated-gif-2.5.0/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_blur] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/@react-native-community/blur/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_blur] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/@react-native-community/blur/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_datetimepicker] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_datetimepicker] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-camera] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-camera] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] /Users/saranya/Documents/GitHub/ImagePlotting/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41

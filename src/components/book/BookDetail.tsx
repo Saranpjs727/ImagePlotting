@@ -1,9 +1,12 @@
 import * as React from "react";
-import {Dimensions, Image, Pressable, StyleSheet, Text, View} from "react-native";
+import {useState} from "react";
+import {Dimensions, Image, Pressable, StyleSheet, Text, View, Keyboard} from "react-native";
 import StarRating from "react-native-star-rating";
 import Icon from "react-native-vector-icons/FontAwesome";
 import {useNavigation} from "@react-navigation/native";
 import images from "../../local-data/assets/images"
+import {DateTimePickerAndroid} from "@react-native-community/datetimepicker";
+import {TextInput} from "react-native-paper";
 
 const {width, height} = Dimensions.get('window');
 
@@ -14,7 +17,41 @@ interface BookDetailProps {
 
 const BookDetail = ({item}: BookDetailProps): JSX.Element => {
 
+    const [reservedClicked, setReservedClicked] = useState(false);
+    const [isDateSelected, setIsDateSelected] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
+    const [date, setDate] = useState(null);
     const navigation = useNavigation();
+
+    const onChange = (event, selectedDate) => {
+        const currentDate = selectedDate;
+        setDate(currentDate);
+    };
+
+    let onFocus = (currentMode) => {
+        Keyboard.dismiss();
+        DateTimePickerAndroid.open({
+            value: new Date(),
+            onChange,
+            mode: currentMode,
+            is24Hour: true,
+        });
+        setIsDateSelected(true);
+        setIsVisible(false);
+
+    }
+
+    const onReserveClick = () => {
+        if(reservedClicked && isDateSelected){
+            setIsVisible(false);
+            navigation.navigate('Feedback', {isReserved : true})
+        }
+        if(reservedClicked && !isDateSelected){
+            setIsVisible(true);
+        }
+        setReservedClicked(true);
+    }
+
     return (
         <>
             <View style={styles.container}>
@@ -55,10 +92,14 @@ const BookDetail = ({item}: BookDetailProps): JSX.Element => {
                         <Text></Text>
                     </View>
                 </View>
-                <View style={styles.bookDetails}>
-                    <Text style={styles.bookHeading}>Description</Text>
-                    <Text numberOfLines={7} style={styles.bookDes}>{item.description}</Text>
-                </View>
+                {
+                    !reservedClicked ?
+                        <View style={styles.bookDetails}>
+                            <Text style={styles.bookHeading}>Description</Text>
+                            <Text numberOfLines={7} style={styles.bookDes}>{item.description}</Text>
+                        </View>
+                        : <View style={styles.bookEmptyDetails}></View>
+                }
                 <View style={styles.bookLocationDet}>
                     <View style={styles.backgroundContainer}>
                         <Image
@@ -79,44 +120,65 @@ const BookDetail = ({item}: BookDetailProps): JSX.Element => {
                     <Text style={styles.bookLocation}>{item.zone}</Text>
                 </View>
                 {
-                    (item.availableStatus === 'Available')
-                        ?
-                        <View style={styles.buttonContainer}>
-                            <Pressable style={styles.buttonDownload} disabled={true} onPress={() => null}>
-                                <Text style={styles.DownloadText}>Online PDF <Icon name="download" size={12}
-                                                                                   color="#3D3D3D"/>
-                                </Text>
-                            </Pressable>
-                            <Pressable style={styles.button} onPress={() => { // @ts-ignore
-                                navigation.navigate('BookRoute')
-                            }}>
-                                <Text style={styles.NavigateText}>Navigate <Icon name="paper-plane" size={12}
-                                                                                 color="#FFFFFF"/></Text>
-                            </Pressable>
+                    reservedClicked ?
+                        <View>
+                            <Text style={styles.bookLoaned}>The book is loaned till {item.loanedTill}, you will receive
+                                a mail once the book is returned.</Text>
+                            <Text style={styles.bookDateHeading}>Enter the Date</Text>
+                            <TextInput style={styles.datePicker}
+                                       keyboardType={'default'}
+                                       outlineColor='#D9D9D9'
+                                       activeOutlineColor='#D9D9D9'
+                                       activeUnderlineColor='#D9D9D9'
+                                       selectionColor='grey'
+                                       underlineColor='#D9D9D9'
+                                       placeholder='Enter the Date'
+                                       value={date ? date.toLocaleDateString() : ""}
+                                       onFocus={onFocus}
+                                       right={<TextInput.Icon name="calendar" color="#4342DC"/>}
+                            />
+                            <Text style={{display: isVisible ? 'flex' : 'none', color: 'red',
+                                fontSize: 12,}}>* Mandatory to select the date</Text>
                         </View>
-                        :
-                        <View style={styles.buttonContainer}>
-                            <Pressable style={styles.buttonCancel} disabled={true} onPress={() => null}>
-                                <Text style={styles.NavigateText}>Online PDF <Icon name="download" size={12}
-                                                                                   color="#FFFFFF"/>
-                                </Text>
-                            </Pressable>
-                            <Pressable style={styles.buttonDownload} disabled={true} onPress={() => { // @ts-ignore
-                                navigation.navigate('BookRoute')
-                            }}>
-                                <Text style={styles.DownloadText}>Navigate <Icon name="paper-plane" size={12}
-                                                                                 color="#3D3D3D"/></Text>
-                            </Pressable>
-                        </View>
+                        : <View></View>
                 }
             </View>
+            {
+                (item.availableStatus === 'Available')
+                    ?
+                    <View style={styles.buttonContainer}>
+                        <Pressable style={styles.buttonDownload} disabled={true} onPress={() => null}>
+                            <Text style={styles.DownloadText}>Online PDF <Icon name="download" size={12}
+                                                                               color="#3D3D3D"/>
+                            </Text>
+                        </Pressable>
+                        <Pressable style={styles.button} onPress={() => { // @ts-ignore
+                            navigation.navigate('BookRoute')
+                        }}>
+                            <Text style={styles.NavigateText}>Navigate <Icon name="paper-plane" size={12}
+                                                                             color="#FFFFFF"/></Text>
+                        </Pressable>
+                    </View>
+                    :
+                    <View style={styles.buttonContainer}>
+                        <Pressable style={styles.buttonCancel} disabled={true} onPress={() => null}>
+                            <Text style={styles.NavigateText}>Online PDF <Icon name="download" size={12}
+                                                                               color="#FFFFFF"/>
+                            </Text>
+                        </Pressable>
+                        <Pressable style={styles.buttonDownload} disabled={false} onPress={onReserveClick}>
+                            <Text style={styles.DownloadText}>Reserve <Icon name="calendar" size={12}
+                                                                            color="#3D3D3D"/></Text>
+                        </Pressable>
+                    </View>
+            }
         </>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
-        height: height,
+        height: height - 160,
         width: width,
         position: "relative",
         display: "flex",
@@ -161,11 +223,20 @@ const styles = StyleSheet.create({
         borderBottomWidth: StyleSheet.hairlineWidth,
         borderRadius: 5
     },
+    bookEmptyDetails: {
+        marginTop: 25
+    },
     bookHeading: {
         fontSize: 14,
         color: '#000000',
         fontWeight: 'bold',
         marginTop: 5
+    },
+    bookDateHeading: {
+        fontSize: 14,
+        color: '#000000',
+        fontWeight: 'bold',
+        marginTop: 25
     },
     bookLocationDes: {
         fontSize: 14,
@@ -184,14 +255,16 @@ const styles = StyleSheet.create({
         minHeight: 210
     },
     locationDetails: {
-        paddingTop: 15,
+        paddingTop: 20,
         display: "flex",
         flexDirection: 'row',
-        justifyContent: 'center'
+        //justifyContent: 'center'
     },
     bookLocation: {
         fontSize: 14,
-        color: '#2B2263'
+        color: '#2B2263',
+        lineHeight: 17,
+        fontWeight: '400'
     },
     arrowIcon: {
         marginLeft: 10,
@@ -199,8 +272,14 @@ const styles = StyleSheet.create({
     },
     buttonContainer: {
         display: 'flex',
-        alignItems: 'center',
-        flexDirection: 'row'
+        flexDirection: 'row',
+        elevation: 30,
+        backgroundColor: 'white',
+        alignItems: "flex-start",
+        paddingLeft: 20,
+        paddingRight: 20,
+        height: 80,
+        paddingTop: 20,
     },
     button: {
         width: 150,
@@ -211,7 +290,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         elevation: 3,
         backgroundColor: '#0B30E0',
-        marginTop: 30,
+        // marginTop: 30,
         marginLeft: 20
     },
     buttonCancel: {
@@ -222,8 +301,8 @@ const styles = StyleSheet.create({
         paddingHorizontal: 32,
         borderRadius: 5,
         elevation: 3,
-        backgroundColor: '#0B30E0',
-        marginTop: 30,
+        backgroundColor: '#4342DC',
+        // marginTop: 30,
         marginRight: 20
     },
     buttonDownload: {
@@ -236,7 +315,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#0B30E0',
         backgroundColor: '#FFFFFF',
-        marginTop: 30,
+        //  marginTop: 30,
     },
     DownloadText: {
         color: '#3D3D3D',
@@ -316,7 +395,25 @@ const styles = StyleSheet.create({
         left: 0,
         right: 0,
     },
-
+    bookLoaned: {
+        marginTop: 20,
+        fontWeight: '400',
+        fontSize: 12,
+        lineHeight: 15,
+        color: '#5A5A5A',
+    },
+    reserveMandatoryText:{
+        color: 'red',
+        fontSize: 12,
+    },
+    datePicker: {
+        width: width - 30,
+        marginTop: 20,
+        backgroundColor: '#D9D9D9',
+        height: 45,
+        borderRadius: 2,
+        borderColor: '#D9D9D9'
+    }
 });
 
 export default BookDetail;
