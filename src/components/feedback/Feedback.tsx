@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         color: '#5A5A5A',
         fontSize: 12,
         fontWeight: '400',
-        fontHeight: 15,
+        lineHeight: 15,
         paddingTop: 5,
         fontFamily: 'Inter',
         fontStyle: 'normal',
