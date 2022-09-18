@@ -6,6 +6,7 @@ import images from "../../local-data/assets/floorImage"
 import {useFocusEffect, useNavigation} from "@react-navigation/native";
 import SwipeUpDown from 'react-native-swipe-up-down';
 import SwipeModal from "../modal/SwipeModal";
+import {StackActions} from "@react-navigation/routers";
 
 const {width, height} = Dimensions.get('screen');
 
@@ -13,7 +14,7 @@ interface BookDetailProps {
     item: any;
 }
 
-const showAlert = (message: string, setIsNavigationClicked: any) =>
+const showAlertNavigation = (message: string, setIsNavigationClicked: any) =>
     Alert.alert(
         "",
         "" + message,
@@ -26,18 +27,56 @@ const showAlert = (message: string, setIsNavigationClicked: any) =>
         ]
     );
 
+
+const showAlert = (message: string, setIsRestartClicked: any, setIsExitClicked: any) =>
+    Alert.alert(
+        "",
+        "" + message,
+        [
+            {
+                text: "Restart", onPress: () => {
+                    setIsRestartClicked(true);
+                }
+            },
+            {text: 'Exit', onPress: () => setIsExitClicked(true)}
+        ]
+    );
+
 const ImagePlotting = ({item}: BookDetailProps): JSX.Element => {
 
     const [isNavigationClicked, setIsNavigationClicked] = useState(false);
+    const [noClickedCount, setNoClickedCount] = useState<number>(0);
+    const [isRestartClicked, setIsRestartClicked] = useState(false);
+    const [isExitClicked, setIsExitClicked] = useState(false);
     const imageWidth = width - 10;
     const imageHeight = height - 210;
     const navigation = useNavigation();
     const swipeUpDownRef = useRef();
 
     const onClickNo = () => {
+        // if (noClickedCount == 0) {
+        //     // @ts-ignore
+        //     swipeUpDownRef.current.showFull();
+        //     setNoClickedCount(prevState => prevState.valueOf() + 1);
+        // } else {
+        //     const val = "\t\t\t\t\t\t\t\tSorry for the Trouble!\n\n\t\tRestart from First or Contact the\n\t\t\t\t\t\t\t\t\t\t\tHelp Desk";
+        //     showAlert(val, setIsRestartClicked, setIsExitClicked);
+        // }
         // @ts-ignore
-        swipeUpDownRef.current.showFull()
+        swipeUpDownRef.current.showFull();
+
     }
+
+    useEffect(() => {
+        if (isRestartClicked) {
+            navigation.dispatch(StackActions.pop(1));
+            navigation.navigate('BookRoute');
+        }
+    }, [isRestartClicked])
+
+    useEffect(() => {
+        isExitClicked ? navigation.navigate('Favourites') : ""
+    }, [isExitClicked])
 
     const onClickCross = () => {
         // @ts-ignore
@@ -45,8 +84,8 @@ const ImagePlotting = ({item}: BookDetailProps): JSX.Element => {
     }
 
     useEffect(() => {
-        const val = "Kindly\n\nGo to the kiosk in the " + item.floorr + " to\n\t\t\t\t\t\t\t\tstart the NavigationFirst";
-        showAlert(val, setIsNavigationClicked);
+        const val = "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKindly\n\n\t\tGo to the kiosk in the " + item.floorr + " to\n\t\t\t\t\t\t\t\tstart the NavigationFirst";
+        showAlertNavigation(val, setIsNavigationClicked);
     }, [])
 
 
@@ -153,7 +192,7 @@ const ImagePlotting = ({item}: BookDetailProps): JSX.Element => {
                 }
                 onShowMini={() => console.log('mini')}
                 onShowFull={() => console.log('full')}
-                animation="spring"
+                animation="easeInEaseOut"
                 disableSwipeIcon={true}
                 extraMarginTop={160}
                 iconColor='grey'

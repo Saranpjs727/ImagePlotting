@@ -4,47 +4,48 @@
     "img": "../../local-data/image/book/Math.png",
     "year": "1970",
     "publisher": "George AOlah(George Andrew)",
-    "rating": 4.1,
+    "rating": 3.8,
     "name": "Carbonium ions/Vol.2, Methods of formation and major types.",
     "description": "The book is about the center of the ion which has the carbon atom has a valency of 3 in a hybridized state of sp2. This means that three electrons of the carbon atoms occupy three orbitals that lie on the same plane. The positive center of the molecule is planar.",
     "floorr": "First Floor",
     "zone": "Yellow Zone (547.13722 OLA)",
+    "bookZone": "Yellow Zone",
     "qrcode": "library",
     "floorImage": "../../local-data/image/library/libfloor.jpeg",
     "floorName": "David Wilson",
     "loanedTill": "",
-    "locationName": "Yellow Zone (547.13722 OLA)",
+    "locationName": "Education Resources",
     "noOfLocatedImages": [
       "1_01",
       "1_02"
     ],
     "navigationSteps": [
       "You are here",
-      "First Floor",
-      "Yellow Zone (547.13722 OLA)",
-      "Shelf 547"
+      "Go right",
+      "Cross Group study 1.1",
+      "Find the education Resource on your left"
     ],
     "navigationPath": [
       {
         "index": 0,
-        "content": "Follow the Arrow to the Aisle GEO/SUR 551.0954",
-        "heading": "Book Name",
+        "content": "Follow the Arrow to the Aisle Chemistry Books 547.1",
+        "heading": "Yellow Zone",
         "buttonText": "Next",
-        "imageIndex": "2_01"
+        "imageIndex": "1_01"
       },
       {
         "index": 1,
-        "content": "Confirm the Aisle GEO/SUR 551.0954",
+        "content": "Confirm the Aisle Chemistry Books 547.1",
         "heading": "",
         "buttonText": "Confirm",
-        "imageIndex": "2_02"
+        "imageIndex": "1_02"
       },
       {
         "index": 2,
         "content": "Did you find the book",
         "heading": "",
         "buttonText": "Yes",
-        "imageIndex": "2_03"
+        "imageIndex": "1_03"
       }
     ],
     "availableStatus": "Available",
@@ -59,16 +60,16 @@
     "pathCoordinates": [
       {
         "x": 310,
-        "y": 325
+        "y": 358
       },
       {
         "x": 310,
-        "y": 310
+        "y": 300
       }
     ],
     "endCoordinate": {
       "x": 310,
-      "y": 310
+      "y": 300
     }
   },
   {
@@ -80,11 +81,12 @@
     "name": "The Geology of South London",
     "description": "Memoirs of the Geological Survey of England and Wales. By Henry Dewey, and C. E. N. Bromehead, B.A. Sheet 270, South London. pp.vi + 92, 3 plates, and 1 text-figure. 1921. 3s. Map. Sheet 270, South London. Drift. Colour printed. 2s.",
     "floorr": "First Floor",
-    "zone": "Yellow Zone",
+    "zone": "Yellow Zone (554.23 GRE/M)",
+    "bookZone": "Yellow Zone",
     "qrcode": "library",
     "floorImage": "../../local-data/image/library/libfloor.jpeg",
     "floorName": "David Wilson",
-    "locationName": "Geological Survey(Yellow Zone)",
+    "locationName": "Geological Surveys",
     "loanedTill": "",
     "noOfLocatedImages": [
       "2_01",
@@ -100,7 +102,7 @@
       {
         "index": 0,
         "content": "Follow the Arrow to the Aisle GEO/SUR 551.0954",
-        "heading": "Book Name",
+        "heading": "Yellow Zone",
         "buttonText": "Next",
         "imageIndex": "2_01"
       },
@@ -152,7 +154,8 @@
     "name": "Introduction to Econometrics,4th Edition",
     "description": "Maintaining G.S. Maddala’s brilliant expository style of cutting through the technical superstructure to reveal only essential details, while retaining the nerve centre of the subject matter, Professor Kajal Lahiri has brought forward this new edition of one of the most important textbooks in its field.",
     "floorr": "First Floor",
-    "zone": "Blue Zone",
+    "zone": "Blue Zone (330.015195 MAD)",
+    "bookZone": "Blue Zone",
     "qrcode": "library",
     "floorImage": "../../local-data/image/library/libfloor.jpeg",
     "floorName": "David Wilson",
@@ -164,73 +167,77 @@
     ],
     "navigationSteps": [
       "You are here",
-      "First Floor",
-      "330 - 330.104",
-      "Shelf 330.0151954"
+      "Go right",
+      "Find the Blue Zone",
+      "Find the Economics Books on your left"
     ],
     "navigationPath": [
       {
         "index": 0,
-        "content": "Follow the Arrow to the Aisle GEO/SUR 551.0954",
-        "heading": "Book Name",
+        "content": "Follow the Arrow to the Aisle Economics Books 330",
+        "heading": "Blue Zone",
         "buttonText": "Next",
-        "imageIndex": "2_01"
+        "imageIndex": "3_01"
       },
       {
         "index": 1,
-        "content": "Confirm the Aisle GEO/SUR 551.0954",
+        "content": "Confirm the Aisle Economics Books 330",
         "heading": "",
         "buttonText": "Confirm",
-        "imageIndex": "2_02"
+        "imageIndex": "3_02"
       },
       {
         "index": 2,
         "content": "Did you find the book",
         "heading": "",
         "buttonText": "Yes",
-        "imageIndex": "2_03"
+        "imageIndex": "3_03"
       }
     ],
     "availableStatus": "Available",
     "pointerStartingCoordinate": {
-      "x": 185,
-      "y": 335
+      "x": 195,
+      "y": 355
     },
     "startingCoordinate": {
-      "x": 185,
-      "y": 360
+      "x": 195,
+      "y": 355
     },
     "pathCoordinates": [
       {
-        "x": 185,
-        "y": 359
+        "x": 215,
+        "y": 355
       },
       {
-        "x": 170,
-        "y": 359
+        "x": 215,
+        "y": 399
       },
       {
-        "x": 170,
-        "y": 430
+        "x": 173,
+        "y": 399
       },
       {
-        "x": 182,
-        "y": 430
+        "x": 173,
+        "y": 480
+      },
+      {
+        "x": 190,
+        "y": 480
       }
     ],
     "endCoordinate": {
-      "x": 182,
-      "y": 430
+      "x": 190,
+      "y": 480
     }
   },
   {
     "id": 4,
     "img": "../../local-data/image/book/Math.png",
-    "year": "1921",
-    "publisher": "Dewey, Henry",
-    "rating": 4.1,
-    "name": "The Geology of South London",
-    "description": "Memoirs of the Geological Survey of England and Wales. By Henry Dewey, and C. E. N. Bromehead, B.A. Sheet 270, South London. pp.vi + 92, 3 plates, and 1 text-figure. 1921. 3s. Map. Sheet 270, South London. Drift. Colour printed. 2s.",
+    "year": "2013",
+    "publisher": "Don Norman",
+    "rating": 4.5,
+    "name": "The Design of Everyday Things",
+    "description": "The Design of Everyday Things is a best-selling book by cognitive scientist and usability engineer Donald Norman about how design serves as the communication between object and user, and how to optimize that conduit of communication in order to make the experience of using the object pleasurable.",
     "floorr": "First Floor",
     "zone": "Yellow Zone",
     "qrcode": "library",

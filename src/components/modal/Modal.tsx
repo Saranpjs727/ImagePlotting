@@ -10,6 +10,7 @@ interface ModalDetails {
     item: any,
     onClickButton: any,
     listIndex: any
+    onNoClick?: any
 }
 
 const {width} = Dimensions.get('screen');
@@ -18,7 +19,8 @@ const Modal = ({
                    type,
                    item,
                    onClickButton,
-                   listIndex
+                   listIndex,
+                   onNoClick
                }: ModalDetails): JSX.Element => {
 
     const [shapeClass,] = useState(type.split('-')[0])
@@ -53,7 +55,7 @@ const Modal = ({
                         <View style={styles.modalContainer}>
                             <><Text style={styles.details}>{navigationPath.content}</Text>
                                 <View style={styles.options}>
-                                    <Pressable style={styles.buttonNo} onPress={onClickButton}>
+                                    <Pressable style={styles.buttonNo} onPress={onNoClick}>
                                         <Text style={styles.buttonTextNo}>No</Text>
                                     </Pressable>
                                     <Pressable style={styles.button} onPress={onClickButton}>
@@ -65,7 +67,7 @@ const Modal = ({
                     :
                     <View style={{...GlobalStyles.main, ...GlobalStyles[shapeClass]}}>
                         <Text
-                            style={styles.heading}>{navigationPath.heading} {navigationPath.heading === '' ? '' : ':'}</Text>
+                            style={styles.heading}>{navigationPath.heading}</Text>
                         <View style={styles.modalContainer}>
                             <><Text style={styles.details}>{navigationPath.content}</Text>
                                 <View style={styles.options}>
@@ -87,7 +89,7 @@ const styles = StyleSheet.create({
         fontSize: 14,
         lineHeight: 20,
         fontWeight: '700',
-        paddingTop: 5,
+        paddingTop: 10,
         paddingLeft: 10,
         fontFamily: 'Inter',
         fontStyle: 'normal'
@@ -182,7 +184,7 @@ const styles = StyleSheet.create({
     bookDetailsStyle: {
         display: "flex",
         flexDirection: "column",
-        width: width - 90,
+        width: width - 100,
         marginLeft: 15,
         alignItems: "flex-start",
         justifyContent: "flex-start"

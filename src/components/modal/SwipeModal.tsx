@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Dimensions, Pressable, StyleSheet, Text, View} from 'react-native';
+import {Dimensions, Pressable, StyleSheet, Text, View, Image} from 'react-native';
 import DashedLine from "react-native-dashed-line";
 import Icon from "react-native-vector-icons/FontAwesome";
 
@@ -22,24 +22,37 @@ const SwipeModal = ({item, onClickTick, isMini, onClickNo, onClickCross}: ModalD
                     isMini ?
                         <>
                             <View style={styles.modalContainer}>
-                                <><Text style={styles.details}>Have you reached {item.locationName} ?</Text>
-                                    <View style={styles.options}>
-                                        <Pressable style={styles.buttonYes} onPress={onClickTick}>
-                                            <Text style={styles.yesText}>Yes</Text>
-                                        </Pressable>
-                                        <Pressable style={styles.buttonNo} onPress={onClickNo}>
-                                            <Text style={styles.noText}>No</Text>
-                                        </Pressable>
-                                    </View>
-                                </>
+                                {/*<><Text style={styles.details}>Have you reached {item.locationName} ?</Text>*/}
+                                {/*    <View style={styles.options}>*/}
+                                {/*        <Pressable style={styles.buttonYes} onPress={onClickTick}>*/}
+                                {/*            <Text style={styles.yesText}>Yes</Text>*/}
+                                {/*        </Pressable>*/}
+                                {/*        <Pressable style={styles.buttonNo} onPress={onClickNo}>*/}
+                                {/*            <Text style={styles.noText}>No</Text>*/}
+                                {/*        </Pressable>*/}
+                                {/*    </View>*/}
+                                {/*</>*/}
+                                <Icon style={styles.cross} name="chevron-up" size={15} color="grey"
+                                   onPress={onClickCross}/>
+                                <Text style={styles.headingLocation}>Reach {item.locationName}</Text>
+                                <View style={styles.modalContainerNew}>
+                                    <><Text style={styles.detailsNew}>To Continue the Navigation</Text>
+                                        <View style={styles.optionsNew}>
+                                            <Pressable style={styles.buttonNew} onPress={onClickTick}>
+                                                <Text style={styles.buttonTextNew}>Next</Text>
+                                            </Pressable>
+                                        </View></>
+                                </View>
                             </View>
                         </>
                         :
                         <>
                             <View style={styles.navDet}>
-                                <Text style={styles.navigationInfo}>Navigation Info </Text>
-                                <Icon style={styles.cross} name="times-circle-o" size={20} color="#373647"
+                                <Icon style={styles.cross} name="chevron-down" size={15} color="grey"
                                       onPress={onClickCross}/>
+                                <Text style={styles.navigationInfo}>Navigation Info </Text>
+                                {/*<Icon style={styles.cross} name="times-circle-o" size={20} color="#373647"*/}
+                                {/*      onPress={onClickCross}/>*/}
                             </View>
                             <View style={styles.navigationContainer}>
                                 {
@@ -83,16 +96,25 @@ const SwipeModal = ({item, onClickTick, isMini, onClickNo, onClickCross}: ModalD
                                     })
                                 }
                                 <View style={styles.modalContainer2}>
-                                    <><Text style={styles.details}>Have you reached {item.locationName} ?</Text>
-                                        <View style={styles.options}>
-                                            <Pressable style={styles.buttonYes} onPress={onClickTick}>
-                                                <Text style={styles.yesText}>Yes</Text>
-                                            </Pressable>
-                                            <Pressable style={styles.buttonNo} onPress={() => null}>
-                                                <Text style={styles.noText}>No</Text>
-                                            </Pressable>
-                                        </View>
-                                    </>
+                                    {/*<><Text style={styles.details}>To continue the nav</Text>*/}
+                                    {/*    <View style={styles.options}>*/}
+                                    {/*        <Pressable style={styles.buttonYes} onPress={onClickTick}>*/}
+                                    {/*            <Text style={styles.yesText}>Yes</Text>*/}
+                                    {/*        </Pressable>*/}
+                                    {/*        <Pressable style={styles.buttonNo} onPress={() => null}>*/}
+                                    {/*            <Text style={styles.noText}>No</Text>*/}
+                                    {/*        </Pressable>*/}
+                                    {/*    </View>*/}
+                                    {/*</>*/}
+                                    <Text style={styles.headingLocation}>Reach {item.locationName}</Text>
+                                    <View style={styles.modalContainerNew}>
+                                        <><Text style={styles.detailsNew}>To Continue the Navigation</Text>
+                                            <View style={styles.optionsNew}>
+                                                <Pressable style={styles.buttonNew} onPress={onClickTick}>
+                                                    <Text style={styles.buttonTextNew}>Next</Text>
+                                                </Pressable>
+                                            </View></>
+                                    </View>
                                 </View>
                             </View>
                         </>
@@ -109,11 +131,62 @@ const styles = StyleSheet.create({
         height: 180,
         width: width,
     },
+    headingLocation: {
+        color: '#000000',
+        fontSize: 14,
+        lineHeight: 20,
+        fontWeight: '700',
+        paddingTop: 5,
+       // paddingLeft: 10,
+        fontFamily: 'Inter',
+        fontStyle: 'normal'
+    },
+    modalContainerNew: {
+        flexDirection: "row",
+        paddingTop: 10,
+        //paddingLeft: 10,
+        width: width
+    },
+    detailsNew: {
+        alignContent: "flex-start",
+        justifyContent: "flex-start",
+        color: 'black',
+        fontSize: 14,
+        lineHeight: 20,
+        width: 190,
+        fontWeight: '400',
+        fontFamily: 'Inter',
+        fontStyle: 'normal'
+    },
+    optionsNew: {
+        flex: 2,
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "flex-end",
+        position: "relative",
+        marginRight: 25
+    },
     heading: {
         color: '#808080',
         fontSize: 15,
         lineHeight: 25,
         paddingLeft: (width / 2) / 2,
+    },
+    buttonNew: {
+        width: 64,
+        height: 29,
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingVertical: 12,
+        paddingHorizontal: 32,
+        borderRadius: 4,
+        borderWidth: 1,
+        borderColor: '#0B30E0',
+        backgroundColor: '#0B30E0',
+    },
+    buttonTextNew: {
+        position: 'absolute',
+        color: '#FBFBFB'
     },
     headingSteps: {
         color: '#808080',
@@ -124,15 +197,13 @@ const styles = StyleSheet.create({
     },
     modalContainer: {
         flexDirection: "column",
-        alignItems: "center",
-        paddingLeft: 10,
+        paddingLeft: 13,
         width: width,
     },
     modalContainer2: {
         flexDirection: "column",
-        alignItems: "center",
-        paddingTop: 15,
-        paddingLeft: 10,
+        paddingTop: 35,
+        paddingLeft: 13,
         width: width,
         marginTop: 10
     },
@@ -274,7 +345,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column'
     },
     cross: {
-        marginLeft: 320
+        paddingLeft: (width / 2),
     }
 });
 
