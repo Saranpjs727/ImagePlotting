@@ -9,6 +9,7 @@ import {TextInput} from "react-native-paper";
 import {DatePickerModal} from 'react-native-paper-dates';
 import 'intl';
 import 'intl/locale-data/jsonp/en';
+import {RangeChange} from "react-native-paper-dates/lib/typescript/Date/Calendar";
 
 const {width, height} = Dimensions.get('window');
 
@@ -152,8 +153,7 @@ const BookDetail = ({item}: BookDetailProps): JSX.Element => {
                                 mode="range"
                                 visible={open}
                                 onDismiss={onDismiss}
-                                startDate={new Date(item.loanedTillArray.year, item.loanedTillArray.month, <item
-                                    className="loanedTillArray date"></item>)}
+                                startDate={new Date(item.loanedTillArray.year, item.loanedTillArray.month, item.loanedTillArray.date)}
                                 endDate={range.endDate}
                                 onConfirm={onConfirm}
                                 validRange={{
