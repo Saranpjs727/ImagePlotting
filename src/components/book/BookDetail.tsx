@@ -53,11 +53,11 @@ const BookDetail = ({item}: BookDetailProps): JSX.Element => {
     }
 
     const onReserveClick = () => {
-        if (reservedClicked && isDateSelected) {
+        if (reservedClicked && isDateSelected && range.startDate != undefined) {
             setIsVisible(false);
             navigation.navigate('Feedback', {isReserved: true, dateRange: range})
         }
-        if (reservedClicked && !isDateSelected) {
+        if (reservedClicked && range.startDate == undefined) {
             setIsVisible(true);
         }
         setReservedClicked(true);
@@ -135,7 +135,7 @@ const BookDetail = ({item}: BookDetailProps): JSX.Element => {
                         <View>
                             <Text style={styles.bookLoaned}>The book is loaned till {item.loanedTill}, you will receive
                                 a mail once the book is returned.</Text>
-                            <Text style={styles.bookDateHeading}>Enter the Date</Text>
+                            <Text style={styles.bookDateHeading}>Reserve the book</Text>
                             <TextInput style={styles.datePicker}
                                        keyboardType={'default'}
                                        outlineColor='#D9D9D9'
@@ -143,7 +143,7 @@ const BookDetail = ({item}: BookDetailProps): JSX.Element => {
                                        activeUnderlineColor='#D9D9D9'
                                        selectionColor='grey'
                                        underlineColor='#D9D9D9'
-                                       placeholder='Enter the Date'
+                                       placeholder='Select the reservation date'
                                        value={range.startDate ? range.startDate.toLocaleDateString() + " - " + range.endDate.toLocaleDateString() : ""}
                                        onFocus={onFocus}
                                        right={<TextInput.Icon name="calendar" color="#4342DC"/>}
