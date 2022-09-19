@@ -10,8 +10,10 @@ if (__DEV__) {
         "exported from 'deprecated-react-native-prop-types'.",
         "Non-serializable values were found in the navigation state.",
         "VirtualizedLists should never be nested inside plain ScrollViews",
-        "node_modules/react-native-canvas/dist/Canvas.js"
-    ];
+        "node_modules/react-native-canvas/dist/Canvas.js",
+        "[react-native-paper-dates] en is not registered"
+
+];
 
     const warn = console.warn;
     console.warn = (...arg) => {

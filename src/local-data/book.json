@@ -14,6 +14,7 @@
     "floorImage": "../../local-data/image/library/libfloor.jpeg",
     "floorName": "David Wilson",
     "loanedTill": "",
+    "loanedTillArray" : {"date" : 0, "month" :  0, "year": 0},
     "locationName": "Education Resources",
     "noOfLocatedImages": [
       "1_01",
@@ -88,6 +89,7 @@
     "floorName": "David Wilson",
     "locationName": "Geological Surveys",
     "loanedTill": "",
+    "loanedTillArray" : {"date" : 0, "month" :  0, "year": 0},
     "noOfLocatedImages": [
       "2_01",
       "2_02"
@@ -161,6 +163,7 @@
     "floorName": "David Wilson",
     "locationName": "Blue Zone",
     "loanedTill": "",
+    "loanedTillArray" : {"date" : 0, "month" :  0, "year": 0},
     "noOfLocatedImages": [
       "3_01",
       "3_02"
@@ -245,6 +248,7 @@
     "floorName": "David Wilson",
     "locationName": "Geological Survey(Yellow Zone)",
     "loanedTill": "20.08.2022",
+    "loanedTillArray" : {"date" : 21, "month" :  8, "year": 2022},
     "noOfLocatedImages": [
       "2_01",
       "2_02"

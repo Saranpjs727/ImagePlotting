@@ -1,12 +1,14 @@
 import * as React from "react";
 import {useState} from "react";
-import {Dimensions, Image, Pressable, StyleSheet, Text, View, Keyboard} from "react-native";
+import {Dimensions, Image, Keyboard, Pressable, StyleSheet, Text, View} from "react-native";
 import StarRating from "react-native-star-rating";
 import Icon from "react-native-vector-icons/FontAwesome";
 import {useNavigation} from "@react-navigation/native";
 import images from "../../local-data/assets/images"
-import {DateTimePickerAndroid} from "@react-native-community/datetimepicker";
 import {TextInput} from "react-native-paper";
+import {DatePickerModal} from 'react-native-paper-dates';
+import 'intl';
+import 'intl/locale-data/jsonp/en';
 
 const {width, height} = Dimensions.get('window');
 
@@ -20,33 +22,41 @@ const BookDetail = ({item}: BookDetailProps): JSX.Element => {
     const [reservedClicked, setReservedClicked] = useState(false);
     const [isDateSelected, setIsDateSelected] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
-    const [date, setDate] = useState(null);
     const navigation = useNavigation();
 
-    const onChange = (event, selectedDate) => {
-        const currentDate = selectedDate;
-        setDate(currentDate);
-    };
+    const [range, setRange] = React.useState<{
+        startDate: Date | undefined;
+        endDate: Date | undefined;
+    }>({startDate: undefined, endDate: undefined});
+
+    const [open, setOpen] = React.useState(false);
+
+    const onDismiss = React.useCallback(() => {
+        setOpen(false);
+    }, [setOpen]);
+
+    const onConfirm = React.useCallback(
+        ({startDate, endDate}) => {
+            setOpen(false);
+            setRange({startDate, endDate});
+        },
+        [setOpen, setRange]
+    );
+
 
     let onFocus = (currentMode) => {
         Keyboard.dismiss();
-        DateTimePickerAndroid.open({
-            value: new Date(),
-            onChange,
-            mode: currentMode,
-            is24Hour: true,
-        });
+        setOpen(true);
         setIsDateSelected(true);
         setIsVisible(false);
-
     }
 
     const onReserveClick = () => {
-        if(reservedClicked && isDateSelected){
+        if (reservedClicked && isDateSelected) {
             setIsVisible(false);
-            navigation.navigate('Feedback', {isReserved : true})
+            navigation.navigate('Feedback', {isReserved: true, dateRange: range})
         }
-        if(reservedClicked && !isDateSelected){
+        if (reservedClicked && !isDateSelected) {
             setIsVisible(true);
         }
         setReservedClicked(true);
@@ -133,12 +143,28 @@ const BookDetail = ({item}: BookDetailProps): JSX.Element => {
                                        selectionColor='grey'
                                        underlineColor='#D9D9D9'
                                        placeholder='Enter the Date'
-                                       value={date ? date.toLocaleDateString() : ""}
+                                       value={range.startDate ? range.startDate.toLocaleDateString() + " - " + range.endDate.toLocaleDateString() : ""}
                                        onFocus={onFocus}
                                        right={<TextInput.Icon name="calendar" color="#4342DC"/>}
                             />
-                            <Text style={{display: isVisible ? 'flex' : 'none', color: 'red',
-                                fontSize: 12,}}>* Mandatory to select the date</Text>
+                            <DatePickerModal
+                                locale="en"
+                                mode="range"
+                                visible={open}
+                                onDismiss={onDismiss}
+                                startDate={new Date(item.loanedTillArray.year, item.loanedTillArray.month, <item
+                                    className="loanedTillArray date"></item>)}
+                                endDate={range.endDate}
+                                onConfirm={onConfirm}
+                                validRange={{
+                                    startDate: new Date(item.loanedTillArray.year, item.loanedTillArray.month, item.loanedTillArray.date),
+                                    disabledDates: [new Date()]
+                                }}
+                            />
+                            <Text style={{
+                                display: isVisible ? 'flex' : 'none', color: 'red',
+                                fontSize: 12,
+                            }}>* Mandatory to select the date</Text>
                         </View>
                         : <View></View>
                 }
@@ -402,7 +428,7 @@ const styles = StyleSheet.create({
         lineHeight: 15,
         color: '#5A5A5A',
     },
-    reserveMandatoryText:{
+    reserveMandatoryText: {
         color: 'red',
         fontSize: 12,
     },

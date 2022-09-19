@@ -27,7 +27,7 @@ const Feedback = ({route}): JSX.Element => {
                 <Image style={styles.feedbackImage}
                        source={require('../../local-data/tick.gif')}
                 />
-                <Text style={styles.reservedHeading}>You will receive a mail once the book is returned. For more
+                <Text style={styles.reservedHeading}>You will receive a mail once the book is returned. The book is reserved for {route.params.dateRange.startDate.toLocaleDateString()} - {route.params.dateRange.endDate.toLocaleDateString()} successfully. For more
                     queries <Text style={{color: '#4342DC'}}>Contact Us </Text>or <Text
                         style={{color: '#4342DC'}}>Email</Text>.</Text>
                 <Pressable style={styles.doneReserved} onPress={() => navigation.navigate('Favourites', {})}>
