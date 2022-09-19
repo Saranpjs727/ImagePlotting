@@ -6,7 +6,6 @@ import images from "../../local-data/assets/floorImage"
 import {useFocusEffect, useNavigation} from "@react-navigation/native";
 import SwipeUpDown from 'react-native-swipe-up-down';
 import SwipeModal from "../modal/SwipeModal";
-import {StackActions} from "@react-navigation/routers";
 
 const {width, height} = Dimensions.get('screen');
 
@@ -28,55 +27,19 @@ const showAlertNavigation = (message: string, setIsNavigationClicked: any) =>
     );
 
 
-const showAlert = (message: string, setIsRestartClicked: any, setIsExitClicked: any) =>
-    Alert.alert(
-        "",
-        "" + message,
-        [
-            {
-                text: "Restart", onPress: () => {
-                    setIsRestartClicked(true);
-                }
-            },
-            {text: 'Exit', onPress: () => setIsExitClicked(true)}
-        ]
-    );
-
 const ImagePlotting = ({item}: BookDetailProps): JSX.Element => {
 
     const [isNavigationClicked, setIsNavigationClicked] = useState(false);
-    const [noClickedCount, setNoClickedCount] = useState<number>(0);
-    const [isRestartClicked, setIsRestartClicked] = useState(false);
-    const [isExitClicked, setIsExitClicked] = useState(false);
     const imageWidth = width - 10;
     const imageHeight = height - 210;
     const navigation = useNavigation();
     const swipeUpDownRef = useRef();
 
     const onClickNo = () => {
-        // if (noClickedCount == 0) {
-        //     // @ts-ignore
-        //     swipeUpDownRef.current.showFull();
-        //     setNoClickedCount(prevState => prevState.valueOf() + 1);
-        // } else {
-        //     const val = "\t\t\t\t\t\t\t\tSorry for the Trouble!\n\n\t\tRestart from First or Contact the\n\t\t\t\t\t\t\t\t\t\t\tHelp Desk";
-        //     showAlert(val, setIsRestartClicked, setIsExitClicked);
-        // }
         // @ts-ignore
         swipeUpDownRef.current.showFull();
 
     }
-
-    useEffect(() => {
-        if (isRestartClicked) {
-            navigation.dispatch(StackActions.pop(1));
-            navigation.navigate('BookRoute');
-        }
-    }, [isRestartClicked])
-
-    useEffect(() => {
-        isExitClicked ? navigation.navigate('Favourites') : ""
-    }, [isExitClicked])
 
     const onClickCross = () => {
         // @ts-ignore
@@ -133,7 +96,6 @@ const ImagePlotting = ({item}: BookDetailProps): JSX.Element => {
         image.addEventListener('load', () => {
             context.drawImage(image, 0, 0, imageWidth, imageHeight);
             context.save();
-            //location(canvas, context);
             onload(canvas, context, image);
         });
 
@@ -232,12 +194,6 @@ const styles = StyleSheet.create({
         borderTopLeftRadius: 1,
         borderTopRightRadius: 1,
         shadowColor: "black",
-        // shadowOffset: {
-        //     width: 5,
-        //     height: 20,
-        // },
-        // shadowOpacity: 0.25,
-        // shadowRadius: 3.84,
         elevation: 20,
     }
 });
